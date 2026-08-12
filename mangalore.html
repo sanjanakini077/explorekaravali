@@ -1,164 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Mangalore | Explore Karavali</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangalore | Explore Karavali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Explore Karavali">
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-            <li class="dropdown">
-                <a href="#">Places to Visit</a>
-                <div class="dropdown-content">
-                    <a href="mangalore.html">Mangalore</a>
-                    <a href="udupi.html">Udupi</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Cuisine</a>
-                <div class="dropdown-content">
-                    <a href="mngfood.html">Mangalore</a>
-                    <a href="udpfood.html">Udupi</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<header class="navbar">
+<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Explore Karavali"></a></div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="destinations.html">Explore</a>
+<div class="dropdown-menu">
+<a href="destinations.html">Destinations</a>
+<a href="mangalore.html">Mangalore</a>
+<a href="udupi.html">Udupi</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="cuisine.html">Culture</a>
+<div class="dropdown-menu">
+<a href="culture.html">Culture & Tradition</a>
+<a href="cuisine.html">Cuisine</a>
+</div>
+</li>
+</ul>
+</nav>
 </header>
 
 <main>
 
-    <section class="page-hero mangalore-hero">
-        <p>COASTAL KARNATAKA</p>
-        <h1>Mangalore</h1>
-    </section>
+<section class="page-hero mangalore-hero">
+<div class="hero-overlay"></div>
+<div class="page-hero-content reveal">
+<span>DESTINATION</span>
+<h1>Discover<br><em>Mangalore</em></h1>
+</div>
+</section>
 
-    <section class="location-intro">
-        <h2>Temples, Beaches & Coastal Heritage</h2>
-        <p>
-            Mangalore is a vibrant port city where spirituality, history, nature and
-            coastal life come together.
-        </p>
-    </section>
+<section class="section">
 
-    <section class="places-grid">
+<div class="section-heading reveal">
+<div>
+<div class="section-label">TEMPLES</div>
+<h2>Places of <em>devotion</em></h2>
+</div>
+</div>
 
-        <article class="place-card-large">
-            <img src="assets/kudroli.jpg" alt="Kudroli Gokarnath Temple">
-            <div>
-                <span>TEMPLE</span>
-                <h2>Kudroli Gokarnath Temple</h2>
-                <p>
-                    Dedicated to Gokarnanatheshwara, this iconic temple is known for its
-                    Dravidian-inspired architecture, colourful celebrations and magnificent
-                    Gopuram.
-                </p>
-                <p class="location-info">Kudroli, Mangaluru</p>
-            </div>
-        </article>
+<div class="place-list">
 
-        <article class="place-card-large reverse">
-            <img src="assets/kadri.jpg" alt="Kadri Manjunatha Temple">
-            <div>
-                <span>TEMPLE</span>
-                <h2>Kadri Manjunatha Temple</h2>
-                <p>
-                    Located at the foot of Kadri Hills, this historic temple combines
-                    spiritual significance with beautiful surroundings and traditional
-                    architecture.
-                </p>
-                <p class="location-info">Kadri, Mangaluru</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/kudroli.jpg')"></div>
+<div class="place-content">
+<span>TEMPLE</span>
+<h2>Kudroli Gokarnath Temple</h2>
+<p>
+A major Shiva temple known for its Dravidian-inspired architecture,
+ornamental gopuram and vibrant celebrations.
+</p>
+</div>
+</article>
 
-        <article class="place-card-large">
-            <img src="assets/mangaladevi2.jpg" alt="Mangaladevi Temple">
-            <div>
-                <span>TEMPLE</span>
-                <h2>Mangaladevi Temple</h2>
-                <p>
-                    One of Mangalore's important spiritual landmarks, the temple is
-                    dedicated to Goddess Mangaladevi and is deeply connected with the
-                    city's identity.
-                </p>
-                <p class="location-info">Bolar, Mangaluru</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/kadri.jpg')"></div>
+<div class="place-content">
+<span>TEMPLE</span>
+<h2>Kadri Manjunatha Temple</h2>
+<p>
+An ancient temple dedicated to Lord Manjunatha, situated amidst the peaceful
+Kadri hills.
+</p>
+</div>
+</article>
 
-        <article class="place-card-large reverse">
-            <img src="assets/St Aloysius Chapel.jpg" alt="St Aloysius Chapel">
-            <div>
-                <span>HERITAGE</span>
-                <h2>St. Aloysius Chapel</h2>
-                <p>
-                    Famous for its beautiful interiors, paintings and architectural
-                    character, this historic chapel is one of Mangalore's most distinctive
-                    landmarks.
-                </p>
-                <p class="location-info">Kodialbail, Mangaluru</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/mangaladevi2.jpg')"></div>
+<div class="place-content">
+<span>TEMPLE</span>
+<h2>Mangaladevi Temple</h2>
+<p>
+A historic temple dedicated to Goddess Mangaladevi and an important spiritual
+landmark of the city.
+</p>
+</div>
+</article>
 
-        <article class="place-card-large">
-            <img src="assets/sultanbattery.jpg" alt="Sultan Battery">
-            <div>
-                <span>HISTORY</span>
-                <h2>Sultan Battery</h2>
-                <p>
-                    A historic watchtower overlooking the Gurupura River, Sultan Battery
-                    offers visitors a glimpse into the military history of the region.
-                </p>
-                <p class="location-info">Urwa, Mangaluru</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/St Aloysius Chapel.jpg')"></div>
+<div class="place-content">
+<span>HERITAGE</span>
+<h2>St. Aloysius Chapel</h2>
+<p>
+Famous for its beautiful interior paintings and historic architecture,
+including works associated with Antonio Moscheni.
+</p>
+</div>
+</article>
 
-        <article class="place-card-large reverse">
-            <img src="assets/kadripark.jpg" alt="Kadri Hill Park">
-            <div>
-                <span>NATURE</span>
-                <h2>Kadri Hill Park</h2>
-                <p>
-                    A peaceful green space surrounded by the hills of Mangalore, perfect
-                    for relaxing away from the busy city.
-                </p>
-                <p class="location-info">Kadri, Mangaluru</p>
-            </div>
-        </article>
+</div>
 
-    </section>
+<div class="section-heading reveal">
+<div>
+<div class="section-label">COAST & HISTORY</div>
+<h2>By the <em>sea</em></h2>
+</div>
+</div>
 
-    <section class="culture-banner">
-        <h2>The Spirit of Mangalore</h2>
-        <p>
-            From Yakshagana and temple festivals to coastal food and traditional
-            communities, Mangalore's culture is deeply connected to its land and sea.
-        </p>
-    </section>
+<div class="place-list">
+
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/sultanbattery.jpg')"></div>
+<div class="place-content">
+<span>HISTORY</span>
+<h2>Sultan Battery</h2>
+<p>
+A historic watchtower overlooking the Gurupura river and Arabian Sea,
+associated with the coastal history of Mangalore.
+</p>
+</div>
+</article>
+
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/kadripark.jpg')"></div>
+<div class="place-content">
+<span>NATURE</span>
+<h2>Kadri Hill Park</h2>
+<p>
+A green urban retreat with gardens, walking areas and peaceful surroundings.
+</p>
+</div>
+</article>
+
+</div>
+
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Explore Karavali. All rights reserved.</p>
+<div>
+<h3>Explore Karavali</h3>
+<p>Discover the coast. Experience the culture. Taste the tradition.</p>
+</div>
+<div><p>© 2026 Explore Karavali</p></div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
