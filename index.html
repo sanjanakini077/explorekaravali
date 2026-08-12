@@ -1,127 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Explore Karavali</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Explore Karavali | Coastal Karnataka</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Explore Karavali">
-        </a>
-    </div>
+<header class="navbar">
+<div class="logo">
+<a href="index.html"><img src="assets/logo.png" alt="Explore Karavali"></a>
+</div>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-            <li class="dropdown">
-                <a href="#">Places to Visit</a>
-                <div class="dropdown-content">
-                    <a href="mangalore.html">Mangalore</a>
-                    <a href="udupi.html">Udupi</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Cuisine</a>
-                <div class="dropdown-content">
-                    <a href="mngfood.html">Mangalore</a>
-                    <a href="udpfood.html">Udupi</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="destinations.html">Explore</a>
+<div class="dropdown-menu">
+<a href="destinations.html">Destinations</a>
+<a href="mangalore.html">Mangalore</a>
+<a href="udupi.html">Udupi</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="cuisine.html">Culture</a>
+<div class="dropdown-menu">
+<a href="culture.html">Culture & Tradition</a>
+<a href="cuisine.html">Cuisine</a>
+</div>
+</li>
+</ul>
+</nav>
 </header>
 
 <main>
 
-    <section class="hero">
-        <div class="hero-overlay">
-            <p class="hero-small">DISCOVER THE COASTAL BEAUTY</p>
-            <h1>Explore Karavali</h1>
-            <p class="hero-text">
-                Discover the beaches, temples, culture, traditions and unforgettable flavours of coastal Karnataka.
-            </p>
-            <a href="destinations.html" class="hero-button">Explore Now</a>
-        </div>
-    </section>
+<section class="hero">
+<div class="hero-overlay"></div>
+<div class="hero-content reveal">
+<span>WELCOME TO THE COAST</span>
+<h1>Explore<br><em>Karavali</em></h1>
+<p>Where the Arabian Sea meets culture, tradition and unforgettable flavours.</p>
+<div class="hero-buttons">
+<a href="destinations.html" class="btn btn-primary">Explore Places</a>
+<a href="cuisine.html" class="btn btn-outline">Discover Cuisine</a>
+</div>
+</div>
+</section>
 
-    <section class="intro">
-        <p class="section-label">WELCOME TO KARAVALI</p>
-        <h2>Where the Coast Tells a Story</h2>
-        <p>
-            From the Arabian Sea to the Western Ghats, Karavali is a land of beautiful beaches,
-            ancient temples, vibrant traditions and legendary coastal cuisine.
-        </p>
-    </section>
+<section class="intro section reveal">
+<div class="section-label">THE COASTAL STORY</div>
+<h2>Discover the soul of<br><em>Coastal Karnataka</em></h2>
+<p>
+Karavali is a land of golden beaches, ancient temples, vibrant traditions,
+lush landscapes and legendary coastal cuisine. Explore Mangalore and Udupi
+and experience a region where every street, shrine and plate has a story.
+</p>
+</section>
 
-    <section class="destination-section">
+<section class="feature-grid section">
 
-        <div class="place-card">
-            <div class="place-image" style="background-image:url('assets/mng.jpg');"></div>
-            <div class="place-content">
-                <span>MANGALORE</span>
-                <h2>Mangalore</h2>
-                <p>
-                    A vibrant coastal city known for its temples, beaches, culture and rich
-                    Mangalorean cuisine.
-                </p>
-                <a href="mangalore.html">Discover Mangalore →</a>
-            </div>
-        </div>
+<a href="mangalore.html" class="feature-card reveal">
+<div class="feature-image" style="background-image:url('assets/mng.jpg')"></div>
+<div class="feature-content">
+<span>DESTINATION</span>
+<h3>Mangalore</h3>
+<p>Beaches, temples, heritage and the flavours of the coast.</p>
+</div>
+</a>
 
-        <div class="place-card">
-            <div class="place-image" style="background-image:url('assets/udupi.jpg');"></div>
-            <div class="place-content">
-                <span>UDUPI</span>
-                <h2>Udupi</h2>
-                <p>
-                    A spiritual and cultural destination famous for Sri Krishna Temple,
-                    pristine beaches and traditional vegetarian cuisine.
-                </p>
-                <a href="udupi.html">Discover Udupi →</a>
-            </div>
-        </div>
+<a href="udupi.html" class="feature-card reveal">
+<div class="feature-image" style="background-image:url('assets/udupi.jpg')"></div>
+<div class="feature-content">
+<span>DESTINATION</span>
+<h3>Udupi</h3>
+<p>Spiritual heritage, islands, beaches and legendary vegetarian cuisine.</p>
+</div>
+</a>
 
-    </section>
+<a href="culture.html" class="feature-card reveal">
+<div class="feature-image" style="background-image:url('assets/about.jpg')"></div>
+<div class="feature-content">
+<span>HERITAGE</span>
+<h3>Culture & Tradition</h3>
+<p>Discover the festivals, art forms and traditions of the Karavali.</p>
+</div>
+</a>
 
-    <section class="feature-section">
-        <div class="feature-image" style="background-image:url('assets/home.jpg');"></div>
+</section>
 
-        <div class="feature-content">
-            <p class="section-label">THE KARAVALI EXPERIENCE</p>
-            <h2>More Than Just a Destination</h2>
-            <p>
-                Experience the warmth of coastal people, the rhythm of traditional festivals,
-                the serenity of ancient temples and the unforgettable taste of authentic
-                Mangalorean and Udupi food.
-            </p>
-
-            <div class="feature-links">
-                <a href="mangalore.html">Places</a>
-                <a href="mngfood.html">Cuisine</a>
-                <a href="about.html">Our Story</a>
-            </div>
-        </div>
-    </section>
+<section class="split-section section reveal">
+<div class="split-image" style="background-image:url('assets/home.jpg')"></div>
+<div class="split-content">
+<div class="section-label">A LAND OF FLAVOURS</div>
+<h2>More than a destination.<br><em>It's an experience.</em></h2>
+<p>
+From steaming neer dosa and spicy kori sukka to temple traditions,
+coastal festivals and peaceful beaches, Karavali offers an experience
+that stays with you long after you leave.
+</p>
+<a href="about.html" class="text-link">Our Story →</a>
+</div>
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Explore Karavali. All rights reserved.</p>
+<div>
+<h3>Explore Karavali</h3>
+<p>Discover the coast. Experience the culture. Taste the tradition.</p>
+</div>
+<div>
+<p>© 2026 Explore Karavali</p>
+</div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
