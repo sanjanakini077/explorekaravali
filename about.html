@@ -1,87 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Explore Karavali</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
-    <title>Explore Karavali</title>
 </head>
-
 <body>
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img src="assets/logo.png">
-            </a>
+
+<header class="navbar">
+    <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Explore Karavali">
+        <span>EXPLORE <b>KARAVALI</b></span>
+    </a>
+
+    <button class="menu-toggle">☰</button>
+
+    <nav class="nav-menu">
+        <a href="index.html">Home</a>
+
+        <div class="nav-dropdown">
+            <a href="destinations.html">Destinations <span>⌄</span></a>
+            <div class="nav-dropdown-menu">
+                <a href="mangalore.html">Mangaluru</a>
+                <a href="udupi.html">Udupi</a>
+            </div>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li class="dropdown">
-                    <a href="#">Places to visit</a>
-                    <div class="dropdown-content">
-                        <a href="mangalore.html">Mangalore</a>
-                        <a href="udupi.html">Udupi</a>
-                        
-                    </div>
-                    </li>  
-                    <li class="dropdown">
-                        <a href="#">Cuisine</a>
-                        <div class="dropdown-content">
-                            <a href="mngfood.html">Mangalore</a>
-                            <a href="udpfood.html">Udupi</a>
-                            
-                        </div>
-                    </li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <h1>About Our Page</h1>
-        <img src="assets/about.jpg" alt="About Page Banner">
-        
+        <a href="culture.html">Culture</a>
 
-        <h2>Welcome to Explore Karavali, your gateway to the vibrant and enchanting state of Karnataka, India! We are thrilled to present our brand-new website designed to offer an immersive experience for tourists, providing a seamless platform to explore the rich cultural, historical, and natural wonders of Karnataka.</p>
+        <div class="nav-dropdown">
+            <a href="cuisine.html">Cuisine <span>⌄</span></a>
+            <div class="nav-dropdown-menu">
+                <a href="mngfood.html">Mangaluru Food</a>
+                <a href="udpfood.html">Udupi Food</a>
+            </div>
+        </div>
 
-        <img style="height: 200px; width: 30%; object-fit:cover ;" src="assets/logo.png">
+        <a href="about.html" class="active">About</a>
+    </nav>
+</header>
 
-        <h2>Discover Karnataka:</h2> 
-        <p>Embark on a virtual journey through Karnataka's diverse landscapes, from the majestic Western Ghats to the pristine beaches of the Arabian Sea. Explore ancient temples, royal palaces, and bustling markets that showcase the state's rich heritage and cultural tapestry. Our website serves as a comprehensive guide, offering detailed information about each destination, along with captivating visuals to give you a glimpse of the beauty that awaits.</p>
-            
-        <h2>Plan Your Adventure:</h2>
-            <p>With Explore Karavali, planning your dream vacation has never been easier. Our user-friendly interface allows you to browse through various tour packages, each crafted to provide a unique and authentic experience. Whether you're an adventure seeker, a history buff, or a nature lover, we have curated tours that cater to every interest and preference.</p>
-            
-        <h2>Seamless Booking Process:</h2>
-           <p>Take the hassle out of trip planning with our convenient online booking system. Select your desired tour, customize it to your liking, and secure your reservation with just a few clicks. Our secure payment gateway ensures a smooth and safe transaction process, giving you peace of mind as you finalize your travel arrangements.</p>
-            
-        <h2>Expert Guides and Local Insights:</h2>
-            <p>To enhance your experience, Explore Karavali provides access to knowledgeable local guides who are passionate about sharing the stories and secrets of their homeland. Immerse yourself in the culture, savor local cuisine, and gain insights that go beyond the surface, creating memories that will last a lifetime.</p>
-            
-        <h2>Stay Connected:</h2>
-        <p>Stay updated with the latest travel trends, events, and special offers through our blog and newsletter. Connect with fellow travelers in our community forum, sharing tips and recommendations that make your Karnataka adventure truly unforgettable.</p>
-            
-        <h2>At Explore Karavali, we believe in making travel accessible, enjoyable, and memorable. Join us on this exciting journey as we showcase the best of Karnataka in 2023 and beyond. Start planning your next adventure with us today!</h2>
+<main>
 
-        <a href="https://www.makemytrip.com">
-            <button>Book Now!</button>
-        </a>
-    </section>
+<section class="page-hero">
+    <img src="assets/about.jpg" alt="About Explore Karavali">
+    <div class="hero-overlay"></div>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+    <div class="page-hero-content">
+        <p class="eyebrow">OUR STORY</p>
+        <h1>Discovering Karavali</h1>
+        <p>A digital journey through coastal Karnataka.</p>
+    </div>
+</section>
+
+<section class="section about-section reveal">
+
+    <div class="about-grid">
+
+        <div>
+            <div class="section-label">WHY EXPLORE KARAVALI?</div>
+            <h2>Beyond The Tourist Map</h2>
+        </div>
+
+        <div>
+            <p>
+                Explore Karavali was created to showcase the diverse character
+                of coastal Karnataka through destinations, food, culture and
+                traditions.
+            </p>
+
+            <p>
+                Instead of looking at Mangaluru and Udupi only as tourist
+                destinations, we wanted to explore the stories behind them —
+                the festivals, temples, food, landscapes and communities that
+                make the region unique.
+            </p>
+
+            <p>
+                From the Arabian Sea to the Western Ghats, Karavali is a place
+                where nature and culture exist side by side.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<section class="values-section reveal">
+
+    <div class="value">
+        <span>01</span>
+        <h3>Discover</h3>
+        <p>Find places beyond the obvious tourist checklist.</p>
+    </div>
+
+    <div class="value">
+        <span>02</span>
+        <h3>Understand</h3>
+        <p>Learn about the traditions and stories behind each place.</p>
+    </div>
+
+    <div class="value">
+        <span>03</span>
+        <h3>Taste</h3>
+        <p>Experience the region through its distinctive food culture.</p>
+    </div>
+
+    <div class="value">
+        <span>04</span>
+        <h3>Respect</h3>
+        <p>Travel with curiosity while respecting local communities.</p>
+    </div>
+
+</section>
+
+<section class="quote-section reveal">
+    <div class="quote-mark">“</div>
+    <h2>Come for the coast. Stay for the stories.</h2>
+    <p>Explore Karavali</p>
+</section>
+
+</main>
 
 <footer>
-        <p>&copy; 2023 Explore Karavali. All rights reserved.</p>
+    <div class="footer-main">
+        <div class="footer-brand">
+            <img src="assets/logo.png" alt="Explore Karavali">
+            <h3>EXPLORE KARAVALI</h3>
+            <p>Discovering the beauty, culture and flavours of coastal Karnataka.</p>
+        </div>
+        <div>
+            <h4>Explore</h4>
+            <a href="destinations.html">Destinations</a>
+            <a href="culture.html">Culture</a>
+            <a href="cuisine.html">Cuisine</a>
+        </div>
+        <div>
+            <h4>Destinations</h4>
+            <a href="mangalore.html">Mangaluru</a>
+            <a href="udupi.html">Udupi</a>
+        </div>
+        <div>
+            <h4>Discover</h4>
+            <a href="about.html">About</a>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© <span class="year"></span> Explore Karavali</span>
+        <span>Made for the coast of Karnataka</span>
+    </div>
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
