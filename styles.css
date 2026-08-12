@@ -10,12 +10,13 @@ html {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f7f4ed;
-    color: #123f3d;
+    background: #f5f2eb;
+    color: #103f3d;
     overflow-x: hidden;
 }
 
 header {
+    width: 100%;
     height: 82px;
     padding: 0 5%;
     background: #071f1e;
@@ -25,7 +26,6 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.18);
 }
 
 .logo {
@@ -38,12 +38,13 @@ header {
     width: 90px;
     height: 65px;
     object-fit: contain;
+    display: block;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
     align-items: center;
+    list-style: none;
     gap: 5px;
 }
 
@@ -52,38 +53,37 @@ nav ul li {
 }
 
 nav ul li a {
+    display: block;
+    padding: 12px 16px;
     color: white;
     text-decoration: none;
-    font-family: Arial, sans-serif;
     font-size: 15px;
     font-weight: 600;
-    padding: 13px 17px;
-    display: block;
-    transition: 0.3s ease;
+    white-space: nowrap;
 }
 
 nav ul li a:hover {
-    color: #e4a456;
+    color: #e1a052;
 }
 
 .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 185px;
+    width: 190px;
     background: #103f3d;
+    padding: 8px;
     border-radius: 10px;
-    padding: 7px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.25);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(10px);
-    transition: 0.3s ease;
+    transform: translateY(8px);
+    transition: 0.25s ease;
 }
 
 .dropdown-content a {
-    padding: 11px 13px;
-    border-radius: 7px;
+    padding: 10px 12px;
+    border-radius: 6px;
 }
 
 .dropdown-content a:hover {
@@ -96,222 +96,9 @@ nav ul li a:hover {
     transform: translateY(0);
 }
 
-.hero {
-    min-height: calc(100vh - 82px);
-    background:
-        linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.5)),
-        url('assets/home.jpg') center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.hero-overlay {
-    max-width: 900px;
-    padding: 40px;
-    color: white;
-    animation: fadeUp 1s ease forwards;
-}
-
-.hero-small,
-.page-hero p {
-    color: #e6aa5a;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 4px;
-    margin-bottom: 18px;
-}
-
-.hero h1,
-.page-hero h1 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(55px, 9vw, 110px);
-    line-height: 1;
-    margin-bottom: 25px;
-}
-
-.hero-text {
-    max-width: 700px;
-    margin: auto;
-    font-size: 19px;
-    line-height: 1.8;
-}
-
-.hero-button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 14px 32px;
-    border-radius: 50px;
-    background: #e1a052;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s ease;
-}
-
-.hero-button:hover {
-    background: white;
-    color: #123f3d;
-    transform: translateY(-4px);
-}
-
-.intro,
-.location-intro,
-.food-intro {
-    max-width: 850px;
-    margin: auto;
-    padding: 100px 30px 70px;
-    text-align: center;
-}
-
-.section-label {
-    color: #d69749;
-    font-size: 13px;
-    font-weight: bold;
-    letter-spacing: 4px;
-    margin-bottom: 15px;
-}
-
-.intro h2,
-.location-intro h2,
-.food-intro h2 {
-    font-family: "Playfair Display", serif;
-    font-size: clamp(38px, 5vw, 60px);
-    margin-bottom: 20px;
-    color: #073f3d;
-}
-
-.intro > p:last-child,
-.location-intro > p,
-.food-intro > p {
-    color: #61706f;
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-.destination-section {
-    max-width: 1250px;
-    margin: auto;
-    padding: 20px 30px 100px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 35px;
-}
-
-.place-card {
-    background: white;
-    border-radius: 22px;
-    overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.1);
-    transition: 0.5s ease;
-}
-
-.place-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 25px 55px rgba(0,0,0,0.18);
-}
-
-.place-image {
-    height: 350px;
-    background-size: cover;
-    background-position: center;
-    transition: transform 0.6s ease;
-}
-
-.place-card:hover .place-image {
-    transform: scale(1.04);
-}
-
-.place-content {
-    padding: 35px;
-}
-
-.place-content span,
-.place-card-large span,
-.food-content span {
-    color: #d69749;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.place-content h2 {
-    margin: 10px 0 15px;
-    font-family: "Playfair Display", serif;
-    font-size: 38px;
-}
-
-.place-content p {
-    color: #687574;
-    line-height: 1.8;
-    margin-bottom: 20px;
-}
-
-.place-content a {
-    color: #0b5551;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.place-content a:hover {
-    color: #d69749;
-}
-
-.feature-section {
-    max-width: 1250px;
-    margin: auto;
-    padding: 30px 30px 120px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 70px;
-}
-
-.feature-image {
-    height: 500px;
-    border-radius: 25px;
-    background-size: cover;
-    background-position: center;
-}
-
-.feature-content h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 52px;
-    margin-bottom: 25px;
-}
-
-.feature-content > p:not(.section-label) {
-    color: #657271;
-    font-size: 18px;
-    line-height: 1.9;
-}
-
-.feature-links {
-    display: flex;
-    gap: 12px;
-    margin-top: 30px;
-    flex-wrap: wrap;
-}
-
-.feature-links a {
-    padding: 11px 20px;
-    border-radius: 30px;
-    background: #0b4c49;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.feature-links a:hover {
-    background: #d69749;
-    transform: translateY(-3px);
-}
-
 .page-hero {
-    height: 500px;
+    width: 100%;
+    height: 480px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,255 +107,122 @@ nav ul li a:hover {
     color: white;
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.mangalore-hero {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-        url('assets/mangalore.jpg');
-}
-
-.udupi-hero {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-        url('assets/udupi.jpg');
 }
 
 .food-hero {
     background-image:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-        url('assets/udupi.jpg');
+        linear-gradient(rgba(0,0,0,0.42), rgba(0,0,0,0.55)),
+        url("assets/mangalore.jpg");
 }
 
-.udupi-food-hero {
-    background-image:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)),
-        url('assets/mangalore.jpg');
-}
-
-.about-intro {
-    max-width: 1250px;
-    margin: auto;
-    padding: 100px 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 70px;
-    align-items: center;
-}
-
-.about-image img {
-    width: 100%;
-    height: 520px;
-    object-fit: cover;
-    border-radius: 25px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
-}
-
-.about-text h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 50px;
-    margin-bottom: 25px;
-}
-
-.about-text p:not(.section-label) {
-    color: #647270;
-    font-size: 17px;
-    line-height: 1.9;
+.page-hero p {
+    color: #e2a054;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
     margin-bottom: 18px;
 }
 
-.about-content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 20px 30px 100px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 25px;
-}
-
-.info-block {
-    background: white;
-    padding: 40px;
-    border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
-    transition: 0.4s ease;
-}
-
-.info-block:hover {
-    transform: translateY(-8px);
-}
-
-.info-block span {
-    color: #d69749;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.info-block h2 {
+.page-hero h1 {
     font-family: "Playfair Display", serif;
-    font-size: 30px;
-    margin: 15px 0;
+    font-size: clamp(50px, 8vw, 90px);
+    line-height: 1;
 }
 
-.info-block p {
-    color: #657271;
-    line-height: 1.8;
-}
-
-.about-quote,
-.culture-banner {
-    max-width: 1100px;
-    margin: 20px auto 100px;
-    padding: 80px 40px;
-    border-radius: 25px;
+.food-intro {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 90px 25px 60px;
     text-align: center;
-    background: #0a403e;
-    color: white;
 }
 
-.about-quote p {
+.food-intro h2 {
     font-family: "Playfair Display", serif;
-    font-size: 35px;
-}
-
-.culture-banner h2 {
-    color: white;
-    font-family: "Playfair Display", serif;
-    font-size: 45px;
+    font-size: clamp(38px, 5vw, 58px);
+    color: #073f3d;
     margin-bottom: 20px;
 }
 
-.culture-banner p {
-    max-width: 750px;
-    margin: auto;
-    color: rgba(255,255,255,0.8);
+.food-intro p {
+    color: #687574;
+    font-size: 18px;
     line-height: 1.8;
-    font-size: 17px;
-}
-
-.places-grid {
-    max-width: 1250px;
-    margin: auto;
-    padding: 20px 30px 80px;
-}
-
-.place-card-large {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 60px;
-    background: white;
-    border-radius: 25px;
-    overflow: hidden;
-    box-shadow: 0 15px 45px rgba(0,0,0,0.08);
-    transition: 0.5s ease;
-}
-
-.place-card-large:hover {
-    transform: translateY(-7px);
-    box-shadow: 0 25px 55px rgba(0,0,0,0.14);
-}
-
-.place-card-large.reverse img {
-    order: 2;
-}
-
-.place-card-large.reverse div {
-    order: 1;
-}
-
-.place-card-large img {
-    width: 100%;
-    height: 420px;
-    object-fit: cover;
-}
-
-.place-card-large > div {
-    padding: 55px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.place-card-large h2 {
-    font-family: "Playfair Display", serif;
-    font-size: 40px;
-    margin: 12px 0 20px;
-}
-
-.place-card-large p {
-    color: #667372;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.place-card-large .location-info {
-    margin-top: 20px;
-    color: #0b504c;
-    font-weight: bold;
 }
 
 .food-grid {
-    max-width: 1300px;
-    margin: auto;
-    padding: 20px 30px 100px;
+    width: min(1250px, calc(100% - 60px));
+    margin: 0 auto;
+    padding: 20px 0 100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 30px;
+    align-items: start;
 }
 
 .food-card {
-    background: white;
+    width: 100%;
+    min-width: 0;
+    background: #ffffff;
     border-radius: 22px;
     overflow: hidden;
-    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
-    transition: 0.45s ease;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.09);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .food-card:hover {
-    transform: translateY(-9px);
-    box-shadow: 0 22px 50px rgba(0,0,0,0.15);
+    transform: translateY(-8px);
+    box-shadow: 0 22px 45px rgba(0,0,0,0.15);
 }
 
 .food-image {
-    height: 260px;
-    background-size: cover;
+    width: 100%;
+    height: 270px;
+    min-height: 270px;
+    display: block;
     background-position: center;
-    transition: transform 0.6s ease;
-}
-
-.food-card:hover .food-image {
-    transform: scale(1.04);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .food-content {
-    padding: 28px;
+    width: 100%;
+    min-height: 220px;
+    padding: 28px 30px 30px;
+    background: #ffffff;
+}
+
+.food-content span {
+    display: block;
+    color: #d69749;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
 }
 
 .food-content h2 {
     font-family: "Playfair Display", serif;
-    color: #073f3d;
-    font-size: 28px;
-    line-height: 1.2;
-    margin: 12px 0;
+    color: #123f3d;
+    font-size: 29px;
+    line-height: 1.25;
+    margin-bottom: 14px;
 }
 
 .food-content p {
     color: #687574;
     font-size: 15px;
     line-height: 1.7;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
 }
 
 .food-content a {
     display: inline-block;
-    color: #0b5551;
-    text-decoration: none;
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 10px;
-    margin-bottom: 5px;
-    transition: 0.3s;
+    color: #164f4c;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    margin-right: 12px;
+    margin-bottom: 6px;
 }
 
 .food-content a:hover {
@@ -576,6 +230,7 @@ nav ul li a:hover {
 }
 
 footer {
+    width: 100%;
     padding: 30px 20px;
     background: #071f1e;
     color: rgba(255,255,255,0.75);
@@ -583,26 +238,15 @@ footer {
 }
 
 footer p {
-    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
-@keyframes fadeUp {
-    from {
-        opacity: 0;
-        transform: translateY(25px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 @media (max-width: 950px) {
+
     header {
         height: auto;
-        padding: 10px 4%;
+        min-height: 82px;
+        padding: 10px 3%;
         flex-direction: column;
     }
 
@@ -611,31 +255,13 @@ footer p {
         justify-content: center;
     }
 
-    .destination-section,
-    .feature-section,
-    .about-intro {
-        grid-template-columns: 1fr;
-    }
-
-    .about-content {
-        grid-template-columns: 1fr;
-    }
-
     .food-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .place-card-large {
-        grid-template-columns: 1fr;
-    }
-
-    .place-card-large.reverse img,
-    .place-card-large.reverse div {
-        order: initial;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media (max-width: 650px) {
+@media (max-width: 600px) {
+
     header {
         position: relative;
     }
@@ -649,64 +275,26 @@ footer p {
         font-size: 12px;
     }
 
-    .hero {
-        min-height: 650px;
-    }
-
-    .hero h1,
-    .page-hero h1 {
-        font-size: 55px;
-    }
-
     .page-hero {
-        height: 400px;
+        height: 380px;
     }
 
-    .destination-section,
-    .food-grid,
-    .places-grid,
-    .about-content {
+    .page-hero h1 {
+        font-size: 52px;
+    }
+
+    .food-grid {
+        width: calc(100% - 30px);
         grid-template-columns: 1fr;
-        padding-left: 18px;
-        padding-right: 18px;
-    }
-
-    .place-image {
-        height: 280px;
-    }
-
-    .feature-image {
-        height: 350px;
-    }
-
-    .about-image img {
-        height: 350px;
-    }
-
-    .place-card-large img {
-        height: 280px;
-    }
-
-    .place-card-large > div {
-        padding: 30px;
-    }
-
-    .place-card-large h2 {
-        font-size: 32px;
+        gap: 22px;
     }
 
     .food-image {
-        height: 240px;
+        height: 260px;
+        min-height: 260px;
     }
 
-    .about-quote,
-    .culture-banner {
-        margin-left: 18px;
-        margin-right: 18px;
-        padding: 55px 25px;
-    }
-
-    .about-quote p {
-        font-size: 27px;
+    .food-content {
+        min-height: auto;
     }
 }
