@@ -3,207 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Udupi Cuisine | Explore Karavali</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Udupi Cuisine | Explore Karavali</title>
 </head>
+
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="Explore Karavali">
-        <span>EXPLORE <b>KARAVALI</b></span>
-    </a>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Explore Karavali">
+        </a>
+    </div>
 
-    <button class="menu-toggle">☰</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
+            <li class="dropdown">
+                <a href="#">Places to Visit</a>
+                <div class="dropdown-content">
+                    <a href="mangalore.html">Mangalore</a>
+                    <a href="udupi.html">Udupi</a>
+                </div>
+            </li>
 
-        <div class="nav-dropdown">
-            <a href="destinations.html">Destinations <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mangalore.html">Mangaluru</a>
-                <a href="udupi.html">Udupi</a>
-            </div>
-        </div>
-
-        <a href="culture.html">Culture</a>
-
-        <div class="nav-dropdown">
-            <a href="cuisine.html" class="active">Cuisine <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mngfood.html">Mangaluru Food</a>
-                <a href="udpfood.html">Udupi Food</a>
-            </div>
-        </div>
-
-        <a href="about.html">About</a>
+            <li class="dropdown">
+                <a href="#">Cuisine</a>
+                <div class="dropdown-content">
+                    <a href="mngfood.html">Mangalore</a>
+                    <a href="udpfood.html">Udupi</a>
+                </div>
+            </li>
+        </ul>
     </nav>
 </header>
 
 <main>
 
-<section class="page-hero">
-    <img src="assets/dosa.jpg" alt="Udupi Cuisine">
-    <div class="hero-overlay"></div>
+    <section class="page-hero udupi-food-hero">
+        <p>TRADITIONAL COASTAL CUISINE</p>
+        <h1>Udupi's Specialty</h1>
+    </section>
 
-    <div class="page-hero-content">
-        <p class="eyebrow">UDUPI CUISINE</p>
-        <h1>The Vegetarian Tradition</h1>
-        <p>A culinary heritage that travelled far beyond the coast.</p>
-    </div>
-</section>
-
-<section class="section reveal">
-
-    <div class="section-label">UDUPI SPECIALTIES</div>
-
-    <h2>What To Eat</h2>
-
-    <div class="dish-grid">
-
-        <article class="dish-card">
-            <img src="assets/kadubu.jpg" alt="Kadubu">
-            <div>
-                <span>TRADITIONAL</span>
-                <h3>Kadubu</h3>
-                <p>A steamed rice preparation traditionally cooked in leaf moulds.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/golibaje.jpg" alt="Goli Baje">
-            <div>
-                <span>SNACK</span>
-                <h3>Goli Baje</h3>
-                <p>Soft fried fritters made from flour, curd and seasonings.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/pathrade.jpg" alt="Pathrode">
-            <div>
-                <span>TRADITIONAL</span>
-                <h3>Pathrode</h3>
-                <p>Spiced colocasia leaves rolled, steamed and sliced.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/gatti.jpg" alt="Pelakaida Gatti">
-            <div>
-                <span>SWEET</span>
-                <h3>Pelakaida Gatti</h3>
-                <p>A traditional steamed jackfruit preparation with a soft texture.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/gujju.jpg" alt="Udhina Gojju">
-            <div>
-                <span>TRADITIONAL</span>
-                <h3>Udhina Gojju</h3>
-                <p>A distinctive traditional side dish associated with Udupi cuisine.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/dosa.jpg" alt="Masala Dosa">
-            <div>
-                <span>CLASSIC</span>
-                <h3>Masala Dosa</h3>
-                <p>Crisp dosa served with potato masala, chutneys and sambar.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/idli.jpg" alt="Idli">
-            <div>
-                <span>BREAKFAST</span>
-                <h3>Idli Thove</h3>
-                <p>Soft steamed idli served with a traditional dal-based accompaniment.</p>
-            </div>
-        </article>
-
-        <article class="dish-card">
-            <img src="assets/buns.jpg" alt="Buns">
-            <div>
-                <span>SNACK</span>
-                <h3>Banana Buns</h3>
-                <p>Sweet fried bread with a soft centre and lightly spiced flavour.</p>
-            </div>
-        </article>
-
-    </div>
-
-</section>
-
-<section class="thali-section reveal">
-
-    <div class="thali-content">
-        <p class="eyebrow">THE UDUPI THALI</p>
-        <h2>A Meal Built Around Tradition</h2>
-
+    <section class="food-intro">
+        <h2>The Taste of Udupi</h2>
         <p>
-            Udupi's vegetarian culinary tradition is closely associated with
-            temple culture and a careful balance of rice, lentils, vegetables,
-            coconut and spices.
+            Udupi cuisine is celebrated for its vegetarian dishes, temple traditions,
+            fresh ingredients and distinctive South Indian flavours.
         </p>
+    </section>
 
-        <div class="thali-items">
-            <span>Rice</span>
-            <span>Sambar</span>
-            <span>Saaru</span>
-            <span>Vegetables</span>
-            <span>Kosambari</span>
-            <span>Chutney</span>
-        </div>
-    </div>
+    <section class="food-grid">
 
-</section>
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/kadubu.jpg');"></div>
+            <div class="food-content">
+                <span>TRADITIONAL</span>
+                <h2>Kadubu</h2>
+                <p>Soft steamed rice preparation traditionally cooked in cups made from jackfruit leaves.</p>
+                <a href="https://maps.app.goo.gl/a1ufJGgaBgRdFLDp9">Kediyoor Gazebo →</a>
+            </div>
+        </article>
 
-<section class="food-note reveal">
-    <div>
-        <p class="eyebrow">A SWEET ENDING</p>
-        <h2>Don't Forget Gadbad</h2>
-    </div>
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/golibaje.jpg');"></div>
+            <div class="food-content">
+                <span>SNACK</span>
+                <h2>Golibaje</h2>
+                <p>A popular crispy-on-the-outside and soft-on-the-inside coastal snack.</p>
+                <a href="https://maps.app.goo.gl/NhtLjT56dh1XsU2d6">Mitra Samaj →</a>
+            </div>
+        </article>
 
-    <p>
-        Gadbad Ice Cream is a colourful layered dessert associated with Udupi,
-        combining ice cream with fruits, jelly, nuts and other toppings.
-    </p>
-</section>
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/pathrade.jpg');"></div>
+            <div class="food-content">
+                <span>TRADITIONAL</span>
+                <h2>Pathrade</h2>
+                <p>A traditional steamed colocasia-leaf dish made with a spiced rice mixture.</p>
+                <a href="https://maps.app.goo.gl/NhtLjT56dh1XsU2d6">Mitra Samaj →</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/gatti.jpg');"></div>
+            <div class="food-content">
+                <span>TRADITIONAL</span>
+                <h2>Pelakaida Gatti</h2>
+                <p>A steamed jackfruit preparation traditionally made with rawa and regional ingredients.</p>
+                <a href="https://maps.app.goo.gl/ymt4PDf6R4dNyXAg6">Kediyoor Hotels →</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/gujju.jpg');"></div>
+            <div class="food-content">
+                <span>TRADITIONAL</span>
+                <h2>Udhina Gojju</h2>
+                <p>A distinctive traditional side dish associated with Udupi's culinary heritage.</p>
+                <a href="https://maps.app.goo.gl/NhtLjT56dh1XsU2d6">Mitra Samaj →</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/dosa.jpg');"></div>
+            <div class="food-content">
+                <span>CLASSIC</span>
+                <h2>Masala Dosa</h2>
+                <p>A South Indian classic of crisp dosa, spiced potato filling, chutney and sambar.</p>
+                <a href="https://maps.app.goo.gl/13ViJr7N8f7bP3ro6">Hotel Diana →</a>
+            </div>
+        </article>
+
+        <article class="food-card">
+            <div class="food-image" style="background-image:url('assets/idli.jpg');"></div>
+            <div class="food-content">
+                <span>BREAKFAST</span>
+                <h2>Idli Thove</h2>
+                <p>Soft steamed idlis served with a comforting traditional dal-based thove.</p>
+                <a href="https://maps.app.goo.gl/T63DCB7ai6F5EDtB9">Woodlands Restaurant →</a>
+            </div>
+        </article>
+
+    </section>
 
 </main>
 
 <footer>
-    <div class="footer-main">
-        <div class="footer-brand">
-            <img src="assets/logo.png" alt="Explore Karavali">
-            <h3>EXPLORE KARAVALI</h3>
-            <p>Discovering the beauty, culture and flavours of coastal Karnataka.</p>
-        </div>
-        <div>
-            <h4>Explore</h4>
-            <a href="destinations.html">Destinations</a>
-            <a href="culture.html">Culture</a>
-            <a href="cuisine.html">Cuisine</a>
-        </div>
-        <div>
-            <h4>Destinations</h4>
-            <a href="mangalore.html">Mangaluru</a>
-            <a href="udupi.html">Udupi</a>
-        </div>
-        <div>
-            <h4>Discover</h4>
-            <a href="about.html">About</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <span>© <span class="year"></span> Explore Karavali</span>
-        <span>Made for the coast of Karnataka</span>
-    </div>
+    <p>© 2026 Explore Karavali. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
