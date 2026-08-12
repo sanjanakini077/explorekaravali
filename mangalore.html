@@ -3,223 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangaluru | Explore Karavali</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Mangalore | Explore Karavali</title>
 </head>
+
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="Explore Karavali">
-        <span>EXPLORE <b>KARAVALI</b></span>
-    </a>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Explore Karavali">
+        </a>
+    </div>
 
-    <button class="menu-toggle">☰</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
-        <div class="nav-dropdown">
-            <a href="destinations.html" class="active">Destinations <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mangalore.html">Mangaluru</a>
-                <a href="udupi.html">Udupi</a>
-            </div>
-        </div>
-        <a href="culture.html">Culture</a>
-        <div class="nav-dropdown">
-            <a href="cuisine.html">Cuisine <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mngfood.html">Mangaluru Food</a>
-                <a href="udpfood.html">Udupi Food</a>
-            </div>
-        </div>
-        <a href="about.html">About</a>
+            <li class="dropdown">
+                <a href="#">Places to Visit</a>
+                <div class="dropdown-content">
+                    <a href="mangalore.html">Mangalore</a>
+                    <a href="udupi.html">Udupi</a>
+                </div>
+            </li>
+
+            <li class="dropdown">
+                <a href="#">Cuisine</a>
+                <div class="dropdown-content">
+                    <a href="mngfood.html">Mangalore</a>
+                    <a href="udpfood.html">Udupi</a>
+                </div>
+            </li>
+        </ul>
     </nav>
 </header>
 
 <main>
 
-<section class="page-hero">
-    <img src="assets/mangalore.jpg" alt="Mangaluru">
-    <div class="hero-overlay"></div>
-    <div class="page-hero-content">
-        <p class="eyebrow">MANGALURU</p>
-        <h1>The Gateway To The Coast</h1>
-        <p>Where heritage, beaches, temples and flavours meet.</p>
-    </div>
-</section>
+    <section class="page-hero mangalore-hero">
+        <p>COASTAL KARNATAKA</p>
+        <h1>Mangalore</h1>
+    </section>
 
-<section class="section reveal">
+    <section class="location-intro">
+        <h2>Temples, Beaches & Coastal Heritage</h2>
+        <p>
+            Mangalore is a vibrant port city where spirituality, history, nature and
+            coastal life come together.
+        </p>
+    </section>
 
-    <div class="section-label">DISCOVER MANGALURU</div>
+    <section class="places-grid">
 
-    <h2>A City Shaped By The Sea</h2>
+        <article class="place-card-large">
+            <img src="assets/kudroli.jpg" alt="Kudroli Gokarnath Temple">
+            <div>
+                <span>TEMPLE</span>
+                <h2>Kudroli Gokarnath Temple</h2>
+                <p>
+                    Dedicated to Gokarnanatheshwara, this iconic temple is known for its
+                    Dravidian-inspired architecture, colourful celebrations and magnificent
+                    Gopuram.
+                </p>
+                <p class="location-info">Kudroli, Mangaluru</p>
+            </div>
+        </article>
 
-    <p class="section-intro">
-        Mangaluru is a coastal city known for its port, beaches, religious
-        landmarks, multicultural heritage and distinctive cuisine. Its cultural
-        character reflects the many communities that have shaped life along
-        the coast.
-    </p>
+        <article class="place-card-large reverse">
+            <img src="assets/kadri.jpg" alt="Kadri Manjunatha Temple">
+            <div>
+                <span>TEMPLE</span>
+                <h2>Kadri Manjunatha Temple</h2>
+                <p>
+                    Located at the foot of Kadri Hills, this historic temple combines
+                    spiritual significance with beautiful surroundings and traditional
+                    architecture.
+                </p>
+                <p class="location-info">Kadri, Mangaluru</p>
+            </div>
+        </article>
 
-    <div class="info-grid">
+        <article class="place-card-large">
+            <img src="assets/mangaladevi2.jpg" alt="Mangaladevi Temple">
+            <div>
+                <span>TEMPLE</span>
+                <h2>Mangaladevi Temple</h2>
+                <p>
+                    One of Mangalore's important spiritual landmarks, the temple is
+                    dedicated to Goddess Mangaladevi and is deeply connected with the
+                    city's identity.
+                </p>
+                <p class="location-info">Bolar, Mangaluru</p>
+            </div>
+        </article>
 
-        <div class="info-card">
-            <span>01</span>
-            <h3>Temples</h3>
-            <p>
-                Kudroli Gokarnanatheshwara, Kadri Manjunatha and Mangaladevi
-                are among the city's important religious landmarks.
-            </p>
-        </div>
+        <article class="place-card-large reverse">
+            <img src="assets/St Aloysius Chapel.jpg" alt="St Aloysius Chapel">
+            <div>
+                <span>HERITAGE</span>
+                <h2>St. Aloysius Chapel</h2>
+                <p>
+                    Famous for its beautiful interiors, paintings and architectural
+                    character, this historic chapel is one of Mangalore's most distinctive
+                    landmarks.
+                </p>
+                <p class="location-info">Kodialbail, Mangaluru</p>
+            </div>
+        </article>
 
-        <div class="info-card">
-            <span>02</span>
-            <h3>Beaches</h3>
-            <p>
-                Panambur, Tannirbhavi and Surathkal offer beautiful stretches
-                of the Arabian Sea.
-            </p>
-        </div>
+        <article class="place-card-large">
+            <img src="assets/sultanbattery.jpg" alt="Sultan Battery">
+            <div>
+                <span>HISTORY</span>
+                <h2>Sultan Battery</h2>
+                <p>
+                    A historic watchtower overlooking the Gurupura River, Sultan Battery
+                    offers visitors a glimpse into the military history of the region.
+                </p>
+                <p class="location-info">Urwa, Mangaluru</p>
+            </div>
+        </article>
 
-        <div class="info-card">
-            <span>03</span>
-            <h3>Heritage</h3>
-            <p>
-                Sultan Battery, St. Aloysius Chapel and the old port reveal
-                different layers of Mangaluru's history.
-            </p>
-        </div>
+        <article class="place-card-large reverse">
+            <img src="assets/kadripark.jpg" alt="Kadri Hill Park">
+            <div>
+                <span>NATURE</span>
+                <h2>Kadri Hill Park</h2>
+                <p>
+                    A peaceful green space surrounded by the hills of Mangalore, perfect
+                    for relaxing away from the busy city.
+                </p>
+                <p class="location-info">Kadri, Mangaluru</p>
+            </div>
+        </article>
 
-        <div class="info-card">
-            <span>04</span>
-            <h3>Food</h3>
-            <p>
-                Neer dosa, kori rotti, seafood, goli baje and Mangalore buns
-                are part of the city's celebrated food culture.
-            </p>
-        </div>
+    </section>
 
-    </div>
-
-</section>
-
-<section class="places-list reveal">
-
-    <div class="section-label">PLACES TO VISIT</div>
-
-    <h2>Mangaluru Highlights</h2>
-
-    <div class="place-row">
-        <img src="assets/kudroli.jpg" alt="Kudroli Temple">
-        <div>
-            <span>TEMPLE</span>
-            <h3>Kudroli Gokarnath Temple</h3>
-            <p>
-                A prominent temple dedicated to Gokarnanatheshwara, known for
-                its striking architecture and annual celebrations.
-            </p>
-        </div>
-    </div>
-
-    <div class="place-row reverse">
-        <img src="assets/kadri.jpg" alt="Kadri Temple">
-        <div>
-            <span>TEMPLE</span>
-            <h3>Kadri Manjunatha Temple</h3>
-            <p>
-                A historic temple located at the base of Kadri Hills, surrounded
-                by a peaceful landscape.
-            </p>
-        </div>
-    </div>
-
-    <div class="place-row">
-        <img src="assets/mangaladevi2.jpg" alt="Mangaladevi Temple">
-        <div>
-            <span>TEMPLE</span>
-            <h3>Mangaladevi Temple</h3>
-            <p>
-                A historic temple dedicated to Goddess Mangaladevi and an
-                important spiritual landmark of the city.
-            </p>
-        </div>
-    </div>
-
-    <div class="place-row reverse">
-        <img src="assets/St Aloysius Chapel.jpg" alt="St Aloysius Chapel">
-        <div>
-            <span>HERITAGE</span>
-            <h3>St. Aloysius Chapel</h3>
-            <p>
-                Known for its beautiful interior paintings, frescoes and
-                distinctive architectural character.
-            </p>
-        </div>
-    </div>
-
-    <div class="place-row">
-        <img src="assets/sultanbattery.jpg" alt="Sultan Battery">
-        <div>
-            <span>HISTORY</span>
-            <h3>Sultan Battery</h3>
-            <p>
-                A historic watchtower overlooking the waters near Mangaluru,
-                associated with the city's maritime past.
-            </p>
-        </div>
-    </div>
-
-    <div class="place-row reverse">
-        <img src="assets/kadripark.jpg" alt="Kadri Hill Park">
-        <div>
-            <span>NATURE</span>
-            <h3>Kadri Hill Park</h3>
-            <p>
-                A green urban retreat with gardens, trees and spaces for
-                relaxing away from the city's bustle.
-            </p>
-        </div>
-    </div>
-
-</section>
-
-<section class="cta-small reveal">
-    <p class="eyebrow">TASTE THE CITY</p>
-    <h2>Discover Mangaluru Through Food</h2>
-    <a href="mngfood.html" class="btn btn-primary">Explore Mangaluru Cuisine</a>
-</section>
+    <section class="culture-banner">
+        <h2>The Spirit of Mangalore</h2>
+        <p>
+            From Yakshagana and temple festivals to coastal food and traditional
+            communities, Mangalore's culture is deeply connected to its land and sea.
+        </p>
+    </section>
 
 </main>
 
 <footer>
-    <div class="footer-main">
-        <div class="footer-brand">
-            <img src="assets/logo.png" alt="Explore Karavali">
-            <h3>EXPLORE KARAVALI</h3>
-            <p>Discovering the beauty, culture and flavours of coastal Karnataka.</p>
-        </div>
-        <div>
-            <h4>Explore</h4>
-            <a href="destinations.html">Destinations</a>
-            <a href="culture.html">Culture</a>
-            <a href="cuisine.html">Cuisine</a>
-        </div>
-        <div>
-            <h4>Destinations</h4>
-            <a href="mangalore.html">Mangaluru</a>
-            <a href="udupi.html">Udupi</a>
-        </div>
-        <div>
-            <h4>Discover</h4>
-            <a href="about.html">About</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <span>© <span class="year"></span> Explore Karavali</span>
-        <span>Made for the coast of Karnataka</span>
-    </div>
+    <p>© 2026 Explore Karavali. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
