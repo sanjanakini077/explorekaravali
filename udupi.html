@@ -1,160 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>Udupi | Explore Karavali</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Udupi | Explore Karavali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Explore Karavali">
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-            <li class="dropdown">
-                <a href="#">Places to Visit</a>
-                <div class="dropdown-content">
-                    <a href="mangalore.html">Mangalore</a>
-                    <a href="udupi.html">Udupi</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Cuisine</a>
-                <div class="dropdown-content">
-                    <a href="mngfood.html">Mangalore</a>
-                    <a href="udpfood.html">Udupi</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<header class="navbar">
+<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Explore Karavali"></a></div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="destinations.html">Explore</a>
+<div class="dropdown-menu">
+<a href="destinations.html">Destinations</a>
+<a href="mangalore.html">Mangalore</a>
+<a href="udupi.html">Udupi</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="cuisine.html">Culture</a>
+<div class="dropdown-menu">
+<a href="culture.html">Culture & Tradition</a>
+<a href="cuisine.html">Cuisine</a>
+</div>
+</li>
+</ul>
+</nav>
 </header>
 
 <main>
 
-    <section class="page-hero udupi-hero">
-        <p>SPIRITUAL COASTAL KARNATAKA</p>
-        <h1>Udupi</h1>
-    </section>
+<section class="page-hero udupi-hero">
+<div class="hero-overlay"></div>
+<div class="page-hero-content reveal">
+<span>DESTINATION</span>
+<h1>Discover<br><em>Udupi</em></h1>
+</div>
+</section>
 
-    <section class="location-intro">
-        <h2>Temples, Islands & Serene Beaches</h2>
-        <p>
-            Udupi blends spiritual heritage, beautiful coastlines, traditional cuisine
-            and a relaxed coastal atmosphere.
-        </p>
-    </section>
+<section class="section">
 
-    <section class="places-grid">
+<div class="section-heading reveal">
+<div>
+<div class="section-label">TEMPLES</div>
+<h2>Spiritual <em>Udupi</em></h2>
+</div>
+</div>
 
-        <article class="place-card-large">
-            <img src="assets/udupi krishna temple.jpg" alt="Udupi Sri Krishna Temple">
-            <div>
-                <span>TEMPLE</span>
-                <h2>Udupi Sri Krishna Matha</h2>
-                <p>
-                    One of South India's most important pilgrimage centres, the temple
-                    is famous for its unique worship traditions and the Navagraha Kitiki.
-                </p>
-                <p class="location-info">Udupi</p>
-            </div>
-        </article>
+<div class="place-list">
 
-        <article class="place-card-large reverse">
-            <img src="assets/malpe.jpg" alt="Malpe Beach">
-            <div>
-                <span>BEACH</span>
-                <h2>Malpe Beach</h2>
-                <p>
-                    A beautiful coastal destination known for its golden sands, Arabian
-                    Sea views, water activities and relaxed atmosphere.
-                </p>
-                <p class="location-info">Malpe, Udupi</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/udupi krishna temple.jpg')"></div>
+<div class="place-content">
+<span>TEMPLE</span>
+<h2>Udupi Sri Krishna Matha</h2>
+<p>
+One of South India's most important pilgrimage centres, renowned for the
+beautiful Krishna idol and the unique Navagraha Kitiki window.
+</p>
+</div>
+</article>
 
-        <article class="place-card-large">
-            <img src="assets/stmaryisland.jpeg" alt="St Mary's Island">
-            <div>
-                <span>ISLAND</span>
-                <h2>St. Mary's Island</h2>
-                <p>
-                    Famous for its distinctive basalt rock formations and beautiful
-                    coastline, the island is one of Udupi's most memorable attractions.
-                </p>
-                <p class="location-info">Malpe, Udupi</p>
-            </div>
-        </article>
+</div>
 
-        <article class="place-card-large reverse">
-            <img src="assets/kapu.jpg" alt="Kapu Beach">
-            <div>
-                <span>BEACH</span>
-                <h2>Kapu Beach</h2>
-                <p>
-                    A peaceful coastal escape featuring a historic lighthouse and
-                    spectacular views across the Arabian Sea.
-                </p>
-                <p class="location-info">Kapu, Udupi</p>
-            </div>
-        </article>
+<div class="section-heading reveal">
+<div>
+<div class="section-label">BEACHES & ISLANDS</div>
+<h2>Where land meets <em>sea</em></h2>
+</div>
+</div>
 
-        <article class="place-card-large">
-            <img src="assets/manipal.jpg" alt="Manipal">
-            <div>
-                <span>CITY</span>
-                <h2>Manipal</h2>
-                <p>
-                    A lively university town known for education, modern development,
-                    green surroundings and a diverse student community.
-                </p>
-                <p class="location-info">Manipal, Udupi</p>
-            </div>
-        </article>
+<div class="place-list">
 
-        <article class="place-card-large reverse">
-            <img src="assets/hanging bridge.jpeg" alt="Kemmannu Hanging Bridge">
-            <div>
-                <span>ADVENTURE</span>
-                <h2>Kemmannu Hanging Bridge</h2>
-                <p>
-                    A scenic attraction over the Swarna River surrounded by greenery,
-                    offering a peaceful experience close to nature.
-                </p>
-                <p class="location-info">Kemmannu, Udupi</p>
-            </div>
-        </article>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/malpe.jpg')"></div>
+<div class="place-content">
+<span>BEACH</span>
+<h2>Malpe Beach</h2>
+<p>
+A popular coastal destination known for its golden sands, Arabian Sea views
+and access to St. Mary's Island.
+</p>
+</div>
+</article>
 
-    </section>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/stmaryisland.jpeg')"></div>
+<div class="place-content">
+<span>ISLAND</span>
+<h2>St. Mary's Island</h2>
+<p>
+A group of islands famous for their distinctive basalt rock formations,
+white sandy shores and scenic Arabian Sea setting.
+</p>
+</div>
+</article>
 
-    <section class="culture-banner">
-        <h2>The Spirit of Udupi</h2>
-        <p>
-            Udupi's identity is shaped by its temple traditions, vegetarian cuisine,
-            coastal landscapes, festivals and strong connection to spirituality.
-        </p>
-    </section>
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/kapu.jpg')"></div>
+<div class="place-content">
+<span>BEACH</span>
+<h2>Kapu Beach</h2>
+<p>
+A beautiful coastal escape featuring a historic lighthouse and panoramic
+views over the Arabian Sea.
+</p>
+</div>
+</article>
+
+</div>
+
+<div class="section-heading reveal">
+<div>
+<div class="section-label">BEYOND THE BEACH</div>
+<h2>More to <em>explore</em></h2>
+</div>
+</div>
+
+<div class="place-list">
+
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/manipal.jpg')"></div>
+<div class="place-content">
+<span>CITY</span>
+<h2>Manipal</h2>
+<p>
+A lively educational town known for its university, diverse community and
+modern coastal character.
+</p>
+</div>
+</article>
+
+<article class="place-card reveal">
+<div class="place-image" style="background-image:url('assets/hanging bridge.jpeg')"></div>
+<div class="place-content">
+<span>NATURE</span>
+<h2>Kemmannu Hanging Bridge</h2>
+<p>
+A scenic bridge across the Swarna River surrounded by greenery and peaceful
+coastal landscapes.
+</p>
+</div>
+</article>
+
+</div>
+
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Explore Karavali. All rights reserved.</p>
+<div>
+<h3>Explore Karavali</h3>
+<p>Discover the coast. Experience the culture. Taste the tradition.</p>
+</div>
+<div><p>© 2026 Explore Karavali</p></div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
