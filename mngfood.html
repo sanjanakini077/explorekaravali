@@ -3,239 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangaluru Cuisine | Explore Karavali</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+    <title>Mangalorean Cuisine | Explore Karavali</title>
 </head>
+
 <body>
 
-<header class="navbar">
-    <a href="index.html" class="brand">
-        <img src="assets/logo.png" alt="Explore Karavali">
-        <span>EXPLORE <b>KARAVALI</b></span>
-    </a>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img src="assets/logo.png" alt="Explore Karavali">
+        </a>
+    </div>
 
-    <button class="menu-toggle">☰</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
 
-    <nav class="nav-menu">
-        <a href="index.html">Home</a>
+            <li class="dropdown">
+                <a href="#">Places to Visit</a>
+                <div class="dropdown-content">
+                    <a href="mangalore.html">Mangalore</a>
+                    <a href="udupi.html">Udupi</a>
+                </div>
+            </li>
 
-        <div class="nav-dropdown">
-            <a href="destinations.html">Destinations <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mangalore.html">Mangaluru</a>
-                <a href="udupi.html">Udupi</a>
-            </div>
-        </div>
-
-        <a href="culture.html">Culture</a>
-
-        <div class="nav-dropdown">
-            <a href="cuisine.html" class="active">Cuisine <span>⌄</span></a>
-            <div class="nav-dropdown-menu">
-                <a href="mngfood.html">Mangaluru Food</a>
-                <a href="udpfood.html">Udupi Food</a>
-            </div>
-        </div>
-
-        <a href="about.html">About</a>
+            <li class="dropdown">
+                <a href="#">Cuisine</a>
+                <div class="dropdown-content">
+                    <a href="mngfood.html">Mangalore</a>
+                    <a href="udpfood.html">Udupi</a>
+                </div>
+            </li>
+        </ul>
     </nav>
 </header>
 
-<main>
+<section id="home">
 
-<section class="page-hero">
-    <img src="assets/koriroti.jpg" alt="Mangaluru Cuisine">
-    <div class="hero-overlay"></div>
+    <h1>Mangalore's Specialty</h1>
 
-    <div class="page-hero-content">
-        <p class="eyebrow">MANGALURU CUISINE</p>
-        <h1>Bold Flavours Of The Coast</h1>
-        <p>Coconut, spices, seafood and generations of culinary tradition.</p>
-    </div>
-</section>
+    <img src="assets/mangalore.jpg" alt="Mangalore">
 
-<section class="section reveal">
+    <section class="left-image">
+        <div class="content">
+            <h2>Gujje Podi</h2>
+            <p>Also known as Kadgi Podi, Gujje Podi is a traditional coastal snack made from tender jackfruit, coated with a spiced batter and deep fried until crisp.</p>
+            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7?g_st=iw">Hotel Woodlands</a>
+        </div>
+        <div class="image" style="background-image: url('assets/podi.jpg');"></div>
+    </section>
 
-    <div class="section-label">MANGALURU SPECIALTIES</div>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/charmuri.jpg');"></div>
+        <div class="content">
+            <h2>Charmuri</h2>
+            <p>Charmuri is a popular Mangalorean street snack prepared with puffed rice, onion, carrot, cucumber, coconut, spices and fresh herbs.</p>
+            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7?g_st=iw">Raja's Charmuri Stall</a>
+        </div>
+    </section>
 
-    <h2>What To Eat</h2>
+    <section class="left-image">
+        <div class="content">
+            <h2>Golibaje</h2>
+            <p>Golibaje, also called Mangalore Bajji, is a soft and fluffy deep-fried snack made using flour, curd, spices and herbs. It is best enjoyed hot with coconut chutney.</p>
+            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7?g_st=iw">Hotel Woodlands</a>
+        </div>
+        <div class="image" style="background-image: url('assets/golibaje.jpg');"></div>
+    </section>
 
-    <div class="dish-grid">
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/koriroti.jpg');"></div>
+        <div class="content">
+            <h2>Kori Rotti</h2>
+            <p>Kori Rotti is one of the most iconic dishes of coastal Karnataka. Crispy rice wafers are served with a rich, spicy chicken curry prepared with coconut and traditional Mangalorean spices.</p>
+            <a href="https://maps.app.goo.gl/RsPRQbMoH6yu8uGd9?g_st=iw">Shetty's Kori Rotti</a>
+        </div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/podi.jpg" alt="Gujje Podi">
-            <div>
-                <span>SNACK</span>
-                <h3>Gujje Podi</h3>
-                <p>Spiced and fried tender jackfruit, a popular Konkani-style snack.</p>
-            </div>
-        </article>
+    <section class="left-image">
+        <div class="content">
+            <h2>Neer Dosa with Chicken Sukka</h2>
+            <p>Neer dosa is a thin and soft rice crepe traditionally paired with Chicken Sukka, a dry chicken preparation cooked with roasted coconut, spices and curry leaves.</p>
+            <a href="https://maps.google.com?q=Kadri%20Cafe,%20Mallikatte%20Rd,%20Mallikatte,%20Kadri,%20Mangaluru,%20Karnataka%20575003">Kadri Cafe</a>
+        </div>
+        <div class="image" style="background-image: url('assets/sukka.jpg');"></div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/charmuri.jpg" alt="Charmuri">
-            <div>
-                <span>STREET FOOD</span>
-                <h3>Charmuri</h3>
-                <p>A crunchy puffed-rice snack mixed with vegetables and seasonings.</p>
-            </div>
-        </article>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/pathrode.jpg');"></div>
+        <div class="content">
+            <h2>Pathrode</h2>
+            <p>Pathrode is a traditional coastal delicacy made by layering colocasia leaves with a spiced rice, coconut and lentil mixture before steaming and slicing it into pieces.</p>
+            <a href="https://maps.app.goo.gl/1ThKYiPjMxc8QEXh8?g_st=iw">Pallkhi Restaurant</a>
+        </div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/golibaje.jpg" alt="Goli Baje">
-            <div>
-                <span>SNACK</span>
-                <h3>Goli Baje</h3>
-                <p>Soft and fluffy fried fritters made with flour, curd and spices.</p>
-            </div>
-        </article>
+    <section class="left-image">
+        <div class="content">
+            <h2>Anjal Fry</h2>
+            <p>Anjal Fry is a famous coastal seafood dish prepared by marinating kingfish with a spicy red masala and shallow frying it until crisp on the outside.</p>
+            <a href="https://maps.app.goo.gl/4B2K9Gib3w5khNXb9?g_st=iw">Machali</a>
+            <a href="https://maps.app.goo.gl/viBGY98esCzG7yP2A?g_st=iw">GiriManja's</a>
+        </div>
+        <div class="image" style="background-image: url('assets/anjalfry.jpg');"></div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/koriroti.jpg" alt="Kori Rotti">
-            <div>
-                <span>MAIN COURSE</span>
-                <h3>Kori Rotti</h3>
-                <p>Crisp rice wafers served with spicy coconut-based chicken curry.</p>
-            </div>
-        </article>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/buns.jpg');"></div>
+        <div class="content">
+            <h2>Mangalore Buns</h2>
+            <p>Mangalore Buns are soft, fluffy and slightly sweet fried breads made with ripe bananas, flour, sugar and a touch of cumin.</p>
+            <a href="https://maps.app.goo.gl/SsEyvMG2hPYBDHbo7?g_st=iw">Sagar Ratna</a>
+        </div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/sukka.jpg" alt="Neer Dosa and Chicken Sukka">
-            <div>
-                <span>CLASSIC</span>
-                <h3>Neer Dosa & Chicken Sukka</h3>
-                <p>Delicate rice dosa paired with a dry, spicy coastal chicken preparation.</p>
-            </div>
-        </article>
+    <section class="left-image">
+        <div class="content">
+            <h2>Kori Sukka with Rotti</h2>
+            <p>Kori Sukka is a traditional Mangalorean dry chicken preparation made with roasted coconut, spices and curry leaves. It pairs beautifully with rice rotti, neer dosa or steamed rice.</p>
+        </div>
+        <div class="image" style="background-image: url('assets/Kori_sukka_with_Rotti.jpg');"></div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/pathrode.jpg" alt="Pathrode">
-            <div>
-                <span>TRADITIONAL</span>
-                <h3>Pathrode</h3>
-                <p>Steamed colocasia leaves layered with a spiced rice-based mixture.</p>
-            </div>
-        </article>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/Kori_Pundi.jpg');"></div>
+        <div class="content">
+            <h2>Kori Pundi</h2>
+            <p>Kori Pundi combines soft steamed rice dumplings with a flavourful chicken preparation. Pundi is a traditional coastal rice dish enjoyed with spicy curries.</p>
+        </div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/anjalfry.jpg" alt="Anjal Fry">
-            <div>
-                <span>SEAFOOD</span>
-                <h3>Anjal Fry</h3>
-                <p>A spicy fried fish preparation loved across the coastal region.</p>
-            </div>
-        </article>
+    <section class="left-image">
+        <div class="content">
+            <h2>Kadle Bajil</h2>
+            <p>Kadle Bajil is a traditional Mangalorean snack made with puffed rice and roasted chickpeas, seasoned with coconut, spices, mustard seeds and curry leaves.</p>
+        </div>
+        <div class="image" style="background-image: url('assets/Kadle_Bajil-Mangalore-Karnataka-DSC001.jpg');"></div>
+    </section>
 
-        <article class="dish-card">
-            <img src="assets/buns.jpg" alt="Mangalore Buns">
-            <div>
-                <span>SWEET</span>
-                <h3>Mangalore Buns</h3>
-                <p>Soft sweet fried bread made with mashed banana, flour and cumin.</p>
-            </div>
-        </article>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/Mangalorean_Bangude_Fish_Curry.jpg');"></div>
+        <div class="content">
+            <h2>Bangude Fish Curry</h2>
+            <p>Bangude Fish Curry is a classic Mangalorean coastal curry prepared with fresh mackerel, coconut, red chillies and tamarind. It is traditionally served with steamed rice or neer dosa.</p>
+        </div>
+    </section>
 
-        <section class="left-image">
-    <div class="content">
-        <h2>Kori Sukka with Rotti</h2>
-        <p>Kori Sukka is a traditional Mangalorean dry chicken preparation made with roasted coconut, spices and curry leaves. It is commonly enjoyed with rice rotti, neer dosa or rice.</p>
-    </div>
-    <div class="image" style="background-image: url('assets/Kori_sukka_with_Rotti.jpg');"></div>
-</section>
+    <section class="left-image">
+        <div class="content">
+            <h2>Mangalore Fish Meal</h2>
+            <p>A traditional Mangalorean fish meal brings together steamed rice, coastal fish curry, fried fish and delicious accompaniments, often served on a banana leaf.</p>
+        </div>
+        <div class="image" style="background-image: url('assets/Mangalore_Fish_Meal.jpg');"></div>
+    </section>
 
-<section class="right-image">
-    <div class="image" style="background-image: url('assets/Kori_Pundi.jpg');"></div>
-    <div class="content">
-        <h2>Kori Pundi</h2>
-        <p>Kori Pundi combines soft steamed rice dumplings with a flavourful chicken preparation. Pundi is a traditional coastal rice dish commonly paired with spicy curries.</p>
-    </div>
-</section>
+    <section class="right-image">
+        <div class="image" style="background-image: url('assets/Mangalore_Style_Fish_Tawa_Fry.jpg');"></div>
+        <div class="content">
+            <h2>Mangalore Style Fish Tawa Fry</h2>
+            <p>Fresh coastal fish is marinated with a spicy red masala and cooked on a hot tawa until the exterior becomes crisp while the fish remains tender.</p>
+        </div>
+    </section>
 
-<section class="left-image">
-    <div class="content">
-        <h2>Kadle Bajil</h2>
-        <p>Kadle Bajil is a traditional Mangalorean snack made with puffed rice and roasted chickpeas, seasoned with coconut, spices and tempering.</p>
-    </div>
-    <div class="image" style="background-image: url('assets/Kadle_Bajil-Mangalore-Karnataka-DSC001.jpg');"></div>
-</section>
+    <section class="left-image">
+        <div class="content">
+            <h2>Clams Sukka</h2>
+            <p>Clams Sukka is a traditional coastal seafood preparation made with fresh clams, grated coconut, roasted spices and curry leaves.</p>
+        </div>
+        <div class="image" style="background-image: url('assets/Mangalore_Style_Clams_Sukka.jpg');"></div>
+    </section>
 
-<section class="right-image">
-    <div class="image" style="background-image: url('assets/Mangalorean_Bangude_Fish_Curry.jpg');"></div>
-    <div class="content">
-        <h2>Bangude Fish Curry</h2>
-        <p>Bangude Fish Curry is a classic coastal curry made with mackerel and a spicy, tangy masala featuring coconut, chilli and tamarind. It is traditionally enjoyed with rice or neer dosa.</p>
-    </div>
-</section>
-
-<section class="left-image">
-    <div class="content">
-        <h2>Mangalore Fish Meal</h2>
-        <p>A traditional Mangalorean fish meal brings together steamed rice, coastal fish curry, fried fish and accompaniments for an authentic taste of the region.</p>
-    </div>
-    <div class="image" style="background-image: url('assets/Mangalore_Fish_Meal.jpg');"></div>
-</section>
-
-<section class="right-image">
-    <div class="image" style="background-image: url('assets/Mangalore_Style_Fish_Tawa_Fry.jpg');"></div>
-    <div class="content">
-        <h2>Mangalore Style Fish Tawa Fry</h2>
-        <p>Fresh coastal fish is marinated with a spicy red masala and cooked on a hot tawa until crisp outside while remaining tender inside.</p>
-    </div>
-</section>
-
-<section class="left-image">
-    <div class="content">
-        <h2>Clams Sukka</h2>
-        <p>Clams Sukka is a traditional coastal seafood preparation made with fresh clams, grated coconut, roasted spices and curry leaves. It is a popular dish in Mangalorean coastal cuisine.</p>
-    </div>
-    <div class="image" style="background-image: url('assets/Mangalore_Style_Clams_Sukka.jpg');"></div>
-</section>
-    </div>
+    <a href="https://www.makemytrip.com">
+        <button>Book Now!</button>
+    </a>
 
 </section>
-
-<section class="food-note reveal">
-    <div>
-        <p class="eyebrow">THE COASTAL PLATE</p>
-        <h2>Rice. Coconut. Spice. Sea.</h2>
-    </div>
-
-    <p>
-        Mangaluru's cuisine reflects its coastal landscape and diverse communities.
-        Seafood and coconut-based preparations sit alongside vegetarian dishes,
-        snacks and traditional rice preparations.
-    </p>
-</section>
-
-</main>
 
 <footer>
-    <div class="footer-main">
-        <div class="footer-brand">
-            <img src="assets/logo.png" alt="Explore Karavali">
-            <h3>EXPLORE KARAVALI</h3>
-            <p>Discovering the beauty, culture and flavours of coastal Karnataka.</p>
-        </div>
-        <div>
-            <h4>Explore</h4>
-            <a href="destinations.html">Destinations</a>
-            <a href="culture.html">Culture</a>
-            <a href="cuisine.html">Cuisine</a>
-        </div>
-        <div>
-            <h4>Destinations</h4>
-            <a href="mangalore.html">Mangaluru</a>
-            <a href="udupi.html">Udupi</a>
-        </div>
-        <div>
-            <h4>Discover</h4>
-            <a href="about.html">About</a>
-        </div>
-    </div>
-
-    <div class="footer-bottom">
-        <span>© <span class="year"></span> Explore Karavali</span>
-        <span>Made for the coast of Karnataka</span>
-    </div>
+    <p>&copy; 2026 Explore Karavali. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
