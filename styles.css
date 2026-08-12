@@ -1,4 +1,12 @@
+/* =========================================================
+   EXPLORE KARAVALI — PREMIUM TRAVEL WEBSITE
+   ========================================================= */
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap');
+
+/* =========================
+   ROOT VARIABLES
+   ========================= */
 
 :root {
     --primary: #0b3d3d;
@@ -44,6 +52,11 @@ body {
     overflow-x: hidden;
 }
 
+
+/* =========================
+   PAGE LOADING EFFECT
+   ========================= */
+
 body::before {
     content: "";
     position: fixed;
@@ -68,6 +81,11 @@ body::before {
         visibility: hidden;
     }
 }
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
     position: sticky;
@@ -104,6 +122,11 @@ header {
     }
 }
 
+
+/* =========================
+   LOGO
+   ========================= */
+
 .logo {
     display: flex;
     align-items: center;
@@ -124,6 +147,10 @@ header {
     transform: scale(1.08) rotate(-2deg);
 }
 
+
+/* =========================
+   NAVIGATION
+   ========================= */
 
 nav ul {
     list-style: none;
@@ -181,6 +208,11 @@ nav ul li a:hover::after {
     transform: scaleX(1);
 }
 
+
+/* =========================
+   DROPDOWN
+   ========================= */
+
 .dropdown-content {
     position: absolute;
     top: calc(100% + 12px);
@@ -233,6 +265,11 @@ nav ul li a:hover::after {
     transform: translateY(0) scale(1);
 }
 
+
+/* =========================
+   MAIN SECTION
+   ========================= */
+
 #home {
     width: min(1400px, 92%);
     margin: auto;
@@ -241,6 +278,11 @@ nav ul li a:hover::after {
 
     text-align: center;
 }
+
+
+/* =========================
+   MAIN HEADINGS
+   ========================= */
 
 h1 {
     position: relative;
@@ -276,6 +318,11 @@ h1::after {
         var(--accent-light)
     );
 }
+
+
+/* =========================
+   HERO IMAGE
+   ========================= */
 
 #home > img {
     width: 100%;
@@ -315,11 +362,19 @@ h1::after {
 }
 
 
+/* =========================
+   SECTION HEADINGS
+   ========================= */
+
 #home > h1:not(:first-child) {
     margin-top: 100px;
     font-size: clamp(38px, 5vw, 60px);
 }
 
+
+/* =========================
+   DESTINATION / FOOD SECTIONS
+   ========================= */
 
 .left-image,
 .right-image {
@@ -354,6 +409,9 @@ h1::after {
 }
 
 
+/* =========================
+   IMAGE
+   ========================= */
 
 .image {
     position: relative;
@@ -401,6 +459,9 @@ h1::after {
 }
 
 
+/* =========================
+   CONTENT
+   ========================= */
 
 .content {
     width: 50%;
@@ -438,6 +499,10 @@ h1::after {
     line-height: 1.9;
 }
 
+
+/* =========================
+   CONTENT LINKS
+   ========================= */
 
 .content a {
     align-self: flex-start;
@@ -486,6 +551,10 @@ h1::after {
 }
 
 
+/* =========================
+   ABOUT PAGE TEXT
+   ========================= */
+
 #home > p,
 #home > h2 {
     max-width: 950px;
@@ -516,6 +585,9 @@ h1::after {
 }
 
 
+/* =========================
+   ABOUT LOGO
+   ========================= */
 
 #home img[style*="height: 200px"] {
     width: 180px !important;
@@ -539,6 +611,11 @@ h1::after {
 #home img[style*="height: 200px"]:hover {
     transform: rotate(3deg) scale(1.05);
 }
+
+
+/* =========================
+   BOOK NOW BUTTON
+   ========================= */
 
 button {
     position: relative;
@@ -612,6 +689,10 @@ button:active {
 }
 
 
+/* =========================
+   FOOTER
+   ========================= */
+
 footer {
     position: relative;
 
@@ -644,6 +725,10 @@ footer p {
 }
 
 
+/* =========================
+   SCROLL REVEAL
+   ========================= */
+
 .reveal {
     opacity: 0;
 
@@ -661,6 +746,9 @@ footer p {
 }
 
 
+/* =========================
+   STAGGER ANIMATION
+   ========================= */
 
 .left-image:nth-of-type(2) {
     transition-delay: 0.05s;
@@ -670,11 +758,20 @@ footer p {
     transition-delay: 0.1s;
 }
 
+
+/* =========================
+   SELECTION
+   ========================= */
+
 ::selection {
     background: var(--accent);
     color: var(--dark);
 }
 
+
+/* =========================
+   SCROLLBAR
+   ========================= */
 
 ::-webkit-scrollbar {
     width: 9px;
@@ -693,6 +790,10 @@ footer p {
     background: var(--accent);
 }
 
+
+/* =========================
+   RESPONSIVE TABLET
+   ========================= */
 
 @media (max-width: 900px) {
 
@@ -728,7 +829,9 @@ footer p {
 }
 
 
-
+/* =========================
+   MOBILE
+   ========================= */
 
 @media (max-width: 700px) {
 
@@ -853,6 +956,12 @@ footer p {
         padding: 24px 15px;
     }
 }
+
+
+/* =========================
+   REDUCED MOTION
+   ========================= */
+
 @media (prefers-reduced-motion: reduce) {
 
     *,
