@@ -1,125 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap" rel="stylesheet">
-    <title>About | Explore Karavali</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About | Explore Karavali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Explore Karavali">
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-            <li class="dropdown">
-                <a href="#">Places to Visit</a>
-                <div class="dropdown-content">
-                    <a href="mangalore.html">Mangalore</a>
-                    <a href="udupi.html">Udupi</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Cuisine</a>
-                <div class="dropdown-content">
-                    <a href="mngfood.html">Mangalore</a>
-                    <a href="udpfood.html">Udupi</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<header class="navbar">
+<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Explore Karavali"></a></div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="destinations.html">Explore</a>
+<div class="dropdown-menu">
+<a href="destinations.html">Destinations</a>
+<a href="mangalore.html">Mangalore</a>
+<a href="udupi.html">Udupi</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="cuisine.html">Culture</a>
+<div class="dropdown-menu">
+<a href="culture.html">Culture & Tradition</a>
+<a href="cuisine.html">Cuisine</a>
+</div>
+</li>
+</ul>
+</nav>
 </header>
 
 <main>
 
-    <section class="page-hero">
-        <p>OUR STORY</p>
-        <h1>About Explore Karavali</h1>
-    </section>
+<section class="page-hero about-hero">
+<div class="hero-overlay"></div>
+<div class="page-hero-content reveal">
+<span>ABOUT US</span>
+<h1>The story behind<br><em>Explore Karavali</em></h1>
+</div>
+</section>
 
-    <section class="about-intro">
-        <div class="about-image">
-            <img src="assets/about.jpg" alt="Karavali">
-        </div>
+<section class="article-section section reveal">
+<div class="section-label">OUR PURPOSE</div>
+<h2>Celebrating the<br><em>Karavali coast</em></h2>
 
-        <div class="about-text">
-            <p class="section-label">WELCOME</p>
-            <h2>Discover the Soul of Coastal Karnataka</h2>
+<p>
+Explore Karavali was created to showcase the beauty and identity of coastal
+Karnataka. The region stretching across Mangalore, Udupi and surrounding
+areas is home to a remarkable combination of beaches, temples, forests,
+rivers, traditional art, festivals and food.
+</p>
 
-            <p>
-                Explore Karavali is a digital travel experience created to showcase the
-                beauty, culture, traditions and cuisine of coastal Karnataka.
-            </p>
+<p>
+Our goal is to bring these experiences together in one place and make it
+easier for travellers to discover the destinations, traditions and flavours
+that make Karavali unique.
+</p>
 
-            <p>
-                The Karavali region is known for its breathtaking coastline, lush landscapes,
-                ancient temples, historic landmarks and diverse culinary traditions.
-            </p>
+<div class="info-cards">
 
-            <p>
-                Our goal is to bring these experiences together in one place and help travellers
-                discover Mangalore, Udupi and the unique stories behind them.
-            </p>
-        </div>
-    </section>
+<div class="info-card">
+<span>01</span>
+<h3>Explore</h3>
+<p>Discover beaches, temples, heritage sites, islands and hidden gems.</p>
+</div>
 
-    <section class="about-content">
+<div class="info-card">
+<span>02</span>
+<h3>Experience</h3>
+<p>Understand the traditions, festivals, art and lifestyle of the coast.</p>
+</div>
 
-        <div class="info-block">
-            <span>01</span>
-            <h2>Discover Karnataka</h2>
-            <p>
-                Explore beaches, temples, heritage sites, natural landscapes and hidden
-                attractions across the coastal region.
-            </p>
-        </div>
+<div class="info-card">
+<span>03</span>
+<h3>Taste</h3>
+<p>Explore the rich culinary traditions of Mangalore and Udupi.</p>
+</div>
 
-        <div class="info-block">
-            <span>02</span>
-            <h2>Experience Culture</h2>
-            <p>
-                Learn about Yakshagana, traditional celebrations, temple customs, local
-                communities and the cultural identity of Karavali.
-            </p>
-        </div>
+</div>
+</section>
 
-        <div class="info-block">
-            <span>03</span>
-            <h2>Taste the Coast</h2>
-            <p>
-                Discover famous coastal dishes including Neer Dosa, Kori Rotti, Mangalore
-                Buns, Pathrode, Udupi cuisine and more.
-            </p>
-        </div>
-
-    </section>
-
-    <section class="about-quote">
-        <p>
-            “Every journey through Karavali is a story waiting to be discovered.”
-        </p>
-    </section>
+<section class="quote-section">
+<div class="quote-overlay"></div>
+<div class="quote-content reveal">
+<p>"The coast is not just a place you visit. It is a feeling you carry with you."</p>
+</div>
+</section>
 
 </main>
 
 <footer>
-    <p>© 2026 Explore Karavali. All rights reserved.</p>
+<div>
+<h3>Explore Karavali</h3>
+<p>Discover the coast. Experience the culture. Taste the tradition.</p>
+</div>
+<div><p>© 2026 Explore Karavali</p></div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
