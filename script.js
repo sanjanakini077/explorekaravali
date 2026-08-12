@@ -1,88 +1,125 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const elements = document.querySelectorAll(
-        ".left-image, .right-image, #home > h1, #home > p, #home > h2, #home > a"
-    );
+    const navbar = document.querySelector(".navbar");
+    const progress = document.querySelector(".scroll-progress");
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navMenu = document.querySelector(".nav-menu");
 
-    elements.forEach((element) => {
-        element.classList.add("reveal");
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", () => {
+            navMenu.classList.toggle("open");
+        });
+    }
 
-    const observer = new IntersectionObserver(
-        (entries, observer) => {
+    document.querySelectorAll(".nav-dropdown > a").forEach(link => {
+        link.addEventListener("click", event => {
 
-            entries.forEach((entry) => {
+            if (window.innerWidth <= 750) {
+                event.preventDefault();
 
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                    observer.unobserve(entry.target);
-                }
+                const dropdown = link.parentElement;
 
-            });
-
-        },
-        {
-            threshold: 0.12,
-            rootMargin: "0px 0px -40px 0px"
-        }
-    );
-
-    elements.forEach((element) => {
-        observer.observe(element);
-    });
-
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
-
-    document.querySelectorAll("nav a").forEach((link) => {
-
-        const href = link.getAttribute("href");
-
-        if (href === currentPage) {
-            link.style.color = "#d6a85f";
-        }
-
-    });
-
-    const heroImage = document.querySelector("#home > img");
-
-    if (heroImage) {
-
-        window.addEventListener("scroll", () => {
-
-            const scroll = window.scrollY;
-
-            if (scroll < 600) {
-                heroImage.style.transform =
-                    `translateY(${scroll * 0.08}px) scale(1.01)`;
+                dropdown.classList.toggle("open");
             }
 
         });
+    });
 
-    }
+    window.addEventListener("scroll", () => {
 
-    document.querySelectorAll("a").forEach((link) => {
+        if (navbar) {
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        }
 
-        const href = link.getAttribute("href");
+        if (progress) {
+            const total =
+                document.documentElement.scrollHeight -
+                window.innerHeight;
+
+            const percent =
+                total > 0
+                    ? (window.scrollY / total) * 100
+                    : 0;
+
+            progress.style.width = percent + "%";
+        }
+
+    });
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                        observer.unobserve(entry.target);
+
+                    }
+
+                });
+
+            },
+            {
+                threshold:0.12
+            }
+        );
+
+    revealElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    const yearElements =
+        document.querySelectorAll(".year");
+
+    yearElements.forEach(element => {
+        element.textContent =
+            new Date().getFullYear();
+    });
+
+    document.querySelectorAll("a").forEach(link => {
+
+        const href =
+            link.getAttribute("href");
 
         if (
             href &&
             href.endsWith(".html") &&
-            !href.startsWith("#")
+            !href.startsWith("#") &&
+            !href.startsWith("http")
         ) {
 
-            link.addEventListener("click", (event) => {
+            link.addEventListener("click", event => {
+
+                if (
+                    event.ctrlKey ||
+                    event.metaKey ||
+                    event.shiftKey ||
+                    event.altKey
+                ) {
+                    return;
+                }
 
                 event.preventDefault();
 
                 document.body.style.transition =
-                    "opacity 0.35s ease";
+                    "opacity .25s ease";
 
                 document.body.style.opacity = "0";
 
                 setTimeout(() => {
                     window.location.href = href;
-                }, 350);
+                }, 250);
 
             });
 
