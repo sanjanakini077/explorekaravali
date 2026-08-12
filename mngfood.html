@@ -1,155 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangalore Cuisine | Explore Karavali</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mangalorean Cuisine | Explore Karavali</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<header>
-    <div class="logo">
-        <a href="index.html">
-            <img src="assets/logo.png" alt="Explore Karavali">
-        </a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-
-            <li class="dropdown">
-                <a href="#">Places to Visit</a>
-                <div class="dropdown-content">
-                    <a href="mangalore.html">Mangalore</a>
-                    <a href="udupi.html">Udupi</a>
-                </div>
-            </li>
-
-            <li class="dropdown">
-                <a href="#">Cuisine</a>
-                <div class="dropdown-content">
-                    <a href="mngfood.html">Mangalore</a>
-                    <a href="udpfood.html">Udupi</a>
-                </div>
-            </li>
-        </ul>
-    </nav>
+<header class="navbar">
+<div class="logo"><a href="index.html"><img src="assets/logo.png" alt="Explore Karavali"></a></div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li class="dropdown">
+<a href="destinations.html">Explore</a>
+<div class="dropdown-menu">
+<a href="destinations.html">Destinations</a>
+<a href="mangalore.html">Mangalore</a>
+<a href="udupi.html">Udupi</a>
+</div>
+</li>
+<li class="dropdown">
+<a href="cuisine.html">Culture</a>
+<div class="dropdown-menu">
+<a href="culture.html">Culture & Tradition</a>
+<a href="cuisine.html">Cuisine</a>
+</div>
+</li>
+</ul>
+</nav>
 </header>
 
 <main>
 
-<section class="page-hero food-hero">
-    <p>COASTAL CUISINE</p>
-    <h1>Mangalore's Specialty</h1>
+<section class="page-hero mangalore-food-hero">
+<div class="hero-overlay"></div>
+<div class="page-hero-content reveal">
+<span>MANGALORE</span>
+<h1>Flavours of<br><em>the coast</em></h1>
+</div>
 </section>
 
-<section class="food-intro">
-    <h2>The Flavours of Mangalore</h2>
-    <p>
-        Mangalorean cuisine brings together coconut, spices, seafood, rice and generations
-        of coastal culinary traditions.
-    </p>
+<section class="food-intro section reveal">
+<div class="section-label">MANGALOREAN CUISINE</div>
+<h2>Food that tastes like <em>home</em></h2>
+<p>
+A rich coastal cuisine shaped by rice, coconut, seafood, spices and generations
+of culinary traditions.
+</p>
 </section>
 
 <section class="food-grid">
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/podi.jpg');"></div>
-        <div class="food-content">
-            <span>SNACK</span>
-            <h2>Gujje Podi</h2>
-            <p>Traditional tender jackfruit preparation with a crispy and spicy coastal flavour.</p>
-            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Hotel Woodlands →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/podi.jpg')"></div>
+<div class="food-content">
+<span>SNACK</span>
+<h2>Gujje Podi</h2>
+<p>Traditional tender jackfruit preparation with a crispy and spicy coastal flavour.</p>
+<a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Hotel Woodlands →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/charmuri.jpg');"></div>
-        <div class="food-content">
-            <span>STREET FOOD</span>
-            <h2>Charmuri</h2>
-            <p>A crunchy puffed-rice snack mixed with vegetables, spices and fresh flavours.</p>
-            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Raja's Charmuri Stall →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/charmuri.jpg')"></div>
+<div class="food-content">
+<span>STREET FOOD</span>
+<h2>Charmuri</h2>
+<p>A crunchy puffed-rice snack mixed with vegetables, spices and fresh flavours.</p>
+<a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Raja's Charmuri Stall →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/golibaje.jpg');"></div>
-        <div class="food-content">
-            <span>SNACK</span>
-            <h2>Golibaje</h2>
-            <p>Soft and fluffy Mangalore bajji made with flour, curd and traditional spices.</p>
-            <a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Hotel Woodlands →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/golibaje.jpg')"></div>
+<div class="food-content">
+<span>SNACK</span>
+<h2>Golibaje</h2>
+<p>Soft and fluffy Mangalore bajji made with flour, curd and traditional spices.</p>
+<a href="https://maps.app.goo.gl/JKC98QTqwZQNwZaX7">Hotel Woodlands →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/koriroti.jpg');"></div>
-        <div class="food-content">
-            <span>CLASSIC</span>
-            <h2>Kori Rotti</h2>
-            <p>Spicy chicken curry served with crisp rice wafers, a signature coastal combination.</p>
-            <a href="https://maps.app.goo.gl/RsPRQbMoH6yu8uGd9">Shetty's Kori Rotti →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/koriroti.jpg')"></div>
+<div class="food-content">
+<span>CLASSIC</span>
+<h2>Kori Rotti</h2>
+<p>Spicy chicken curry served with crisp rice wafers, a signature coastal combination.</p>
+<a href="https://maps.app.goo.gl/RsPRQbMoH6yu8uGd9">Shetty's Kori Rotti →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/sukka.jpg');"></div>
-        <div class="food-content">
-            <span>CLASSIC</span>
-            <h2>Neer Dosa &amp; Chicken Sukka</h2>
-            <p>Delicate rice dosa paired with a dry, spicy coastal chicken preparation.</p>
-            <a href="https://maps.google.com?q=Kadri+Cafe+Mangaluru">Kadri Cafe →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/sukka.jpg')"></div>
+<div class="food-content">
+<span>CLASSIC</span>
+<h2>Neer Dosa &amp; Chicken Sukka</h2>
+<p>Delicate rice dosa paired with a dry, spicy coastal chicken preparation.</p>
+<a href="https://maps.google.com?q=Kadri+Cafe+Mangaluru">Kadri Cafe →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/pathrode.jpg');"></div>
-        <div class="food-content">
-            <span>TRADITIONAL</span>
-            <h2>Pathrode</h2>
-            <p>Steamed colocasia leaves layered with a spiced rice-based mixture.</p>
-            <a href="https://maps.app.goo.gl/1ThKYiPjMxc8QEXh8">Pallkhi Restaurant →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/pathrode.jpg')"></div>
+<div class="food-content">
+<span>TRADITIONAL</span>
+<h2>Pathrode</h2>
+<p>Steamed colocasia leaves layered with a spiced rice-based mixture.</p>
+<a href="https://maps.app.goo.gl/1ThKYiPjMxc8QEXh8">Pallkhi Restaurant →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/anjalfry.jpg');"></div>
-        <div class="food-content">
-            <span>SEAFOOD</span>
-            <h2>Anjal Fry</h2>
-            <p>A spicy fried fish preparation loved across the coastal region.</p>
-            <a href="https://maps.app.goo.gl/4B2K9Gib3w5khNXb9">Machali →</a>
-            <a href="https://maps.app.goo.gl/viBGY98esCzG7yP2A">GiriManja's →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/anjalfry.jpg')"></div>
+<div class="food-content">
+<span>SEAFOOD</span>
+<h2>Anjal Fry</h2>
+<p>A spicy fried fish preparation loved across the coastal region.</p>
+<a href="https://maps.app.goo.gl/4B2K9Gib3w5khNXb9">Machali →</a>
+<a href="https://maps.app.goo.gl/viBGY98esCzG7yP2A">GiriManja's →</a>
+</div>
+</article>
 
-    <article class="food-card">
-        <div class="food-image" style="background-image:url('assets/buns.jpg');"></div>
-        <div class="food-content">
-            <span>SWEET</span>
-            <h2>Mangalore Buns</h2>
-            <p>Soft sweet fried bread prepared with mashed banana, flour and a hint of cumin.</p>
-            <a href="https://maps.app.goo.gl/SsEyvMG2hPYBDHbo7">Sagar Ratna →</a>
-        </div>
-    </article>
+<article class="food-card reveal">
+<div class="food-image" style="background-image:url('assets/buns.jpg')"></div>
+<div class="food-content">
+<span>SWEET</span>
+<h2>Mangalore Buns</h2>
+<p>Soft sweet fried bread prepared with mashed banana, flour and a hint of cumin.</p>
+<a href="https://maps.app.goo.gl/SsEyvMG2hPYBDHbo7">Sagar Ratna →</a>
+</div>
+</article>
 
 </section>
 
 </main>
 
 <footer>
-    <p>© 2026 Explore Karavali. All rights reserved.</p>
+<div>
+<h3>Explore Karavali</h3>
+<p>Discover the coast. Experience the culture. Taste the tradition.</p>
+</div>
+<div><p>© 2026 Explore Karavali</p></div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
 </html>
