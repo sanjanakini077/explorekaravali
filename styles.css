@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Teko:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -12,8 +12,8 @@ html {
 
 body {
     font-family: 'DM Sans', sans-serif;
-    background: #f7f4ed;
-    color: #123f3d;
+    background: #f6f3eb;
+    color: #0a403e;
     overflow-x: hidden;
 }
 
@@ -22,13 +22,13 @@ header {
     top: 0;
     z-index: 1000;
     height: 82px;
-    padding: 0 6%;
+    padding: 0 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(8, 31, 30, 0.96);
+    background: rgba(5, 31, 30, 0.97);
     backdrop-filter: blur(12px);
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
 }
 
 .logo {
@@ -41,13 +41,12 @@ header {
     width: 90px;
     height: 65px;
     object-fit: contain;
-    display: block;
 }
 
 nav ul {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
     list-style: none;
 }
 
@@ -58,26 +57,24 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 12px 18px;
-    color: #fff;
+    color: white;
     text-decoration: none;
-    font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     font-weight: 600;
-    letter-spacing: 0.4px;
     transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #e7a955;
+    color: #dda153;
 }
 
 .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 190px;
+    min-width: 180px;
     padding: 8px;
-    background: #123f3d;
+    background: #0a403e;
     border-radius: 12px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
     opacity: 0;
@@ -87,7 +84,7 @@ nav ul li a:hover {
 }
 
 .dropdown-content a {
-    padding: 12px 15px;
+    padding: 11px 14px;
     border-radius: 8px;
 }
 
@@ -102,122 +99,126 @@ nav ul li a:hover {
 }
 
 #home {
-    width: 100%;
-    max-width: 1400px;
+    max-width: 1500px;
     margin: auto;
-    padding: 90px 5% 120px;
+    padding: 80px 4% 120px;
     text-align: center;
 }
 
 #home > h1 {
     margin-bottom: 35px;
-    color: #083f3d;
+    color: #073f3d;
     font-family: 'Playfair Display', serif;
-    font-size: clamp(42px, 6vw, 78px);
-    font-weight: 600;
-    line-height: 1.05;
+    font-size: clamp(45px, 5vw, 72px);
+    line-height: 1.1;
 }
 
 #home > img {
-    display: block;
     width: 100%;
-    max-width: 1200px;
-    height: 500px;
-    margin: 0 auto 100px;
+    max-width: 1250px;
+    height: 480px;
     object-fit: cover;
     border-radius: 28px;
+    margin: 0 auto 80px;
+    display: block;
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
 }
 
 .left-image,
 .right-image {
-    width: 100%;
-    min-height: 460px;
-    margin: 0 auto 100px;
+    display: inline-flex;
+    vertical-align: top;
+    flex-direction: column;
+    width: calc(33.333% - 25px);
+    height: 570px;
+    margin: 0 10px 30px;
     padding: 0;
-    display: flex;
-    align-items: center;
-    gap: 70px;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 0 0 24px 24px;
     text-align: left;
-    background: transparent;
+    box-shadow: 0 15px 40px rgba(25, 48, 46, 0.09);
+    transition: transform 0.45s ease, box-shadow 0.45s ease;
 }
 
-.left-image .content,
-.right-image .content {
-    flex: 1;
-    max-width: none;
-    padding: 20px;
+.left-image:hover,
+.right-image:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 55px rgba(25, 48, 46, 0.17);
 }
 
 .left-image .image,
 .right-image .image {
-    flex: 1;
-    width: 50%;
-    height: 460px;
-    min-height: 460px;
-    border-radius: 24px;
+    order: 1;
+    flex: none;
+    width: 100%;
+    height: 280px;
+    min-height: 280px;
+    margin: 0;
+    border-radius: 0;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
-    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    transition: transform 0.6s ease;
 }
 
-.left-image .image:hover,
-.right-image .image:hover {
-    transform: scale(1.025);
-    box-shadow: 0 28px 65px rgba(0, 0, 0, 0.25);
+.left-image:hover .image,
+.right-image:hover .image {
+    transform: scale(1.04);
 }
 
-.right-image .image {
-    order: 1;
-}
-
+.left-image .content,
 .right-image .content {
     order: 2;
+    width: 100%;
+    max-width: none;
+    height: 290px;
+    padding: 28px 28px 25px;
+    overflow: hidden;
 }
 
 .content h2 {
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     color: #073f3d;
     font-family: 'Playfair Display', serif;
-    font-size: clamp(36px, 4vw, 58px);
+    font-size: 29px;
+    line-height: 1.18;
     font-weight: 600;
-    line-height: 1.1;
 }
 
 .content p {
-    margin-bottom: 25px;
-    color: #526b6a;
+    margin-bottom: 18px;
+    color: #60706f;
     font-family: 'DM Sans', sans-serif;
-    font-size: 18px;
-    line-height: 1.9;
+    font-size: 15px;
+    line-height: 1.7;
 }
 
 .content a {
     display: inline-block;
-    margin: 5px 8px 5px 0;
-    padding: 10px 18px;
-    color: #fff;
-    background: #0c5350;
+    margin: 4px 5px 0 0;
+    padding: 8px 14px;
+    color: #ffffff;
+    background: #0b4c49;
     border-radius: 30px;
     text-decoration: none;
     font-family: 'DM Sans', sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 
 .content a:hover {
-    background: #e19a45;
-    transform: translateY(-3px);
+    background: #d99b4b;
+    transform: translateY(-2px);
 }
 
 button {
+    margin-top: 35px;
+    padding: 15px 40px;
     border: none;
-    padding: 16px 42px;
     border-radius: 50px;
     background: #0b4c49;
-    color: #fff;
+    color: #ffffff;
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -227,14 +228,14 @@ button {
 }
 
 button:hover {
-    background: #e09a48;
+    background: #d99b4b;
     transform: translateY(-4px);
-    box-shadow: 0 15px 30px rgba(224, 154, 72, 0.3);
+    box-shadow: 0 15px 30px rgba(217, 155, 75, 0.3);
 }
 
 footer {
     width: 100%;
-    padding: 30px 20px;
+    padding: 28px 20px;
     background: #082f2d;
     color: rgba(255, 255, 255, 0.8);
     text-align: center;
@@ -246,11 +247,17 @@ footer p {
     font-size: 14px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
+    .left-image,
+    .right-image {
+        width: calc(50% - 25px);
+    }
+}
+
+@media (max-width: 700px) {
     header {
         height: auto;
-        min-height: 80px;
-        padding: 10px 5%;
+        padding: 10px 4%;
         flex-direction: column;
         gap: 5px;
     }
@@ -261,86 +268,44 @@ footer p {
     }
 
     nav ul li a {
-        padding: 8px 10px;
-        font-size: 13px;
+        padding: 8px 9px;
+        font-size: 12px;
     }
 
     #home {
-        padding: 60px 5% 80px;
+        padding: 55px 5% 90px;
     }
 
     #home > img {
-        height: 380px;
-        margin-bottom: 70px;
+        height: 300px;
+        border-radius: 20px;
     }
 
     .left-image,
     .right-image {
-        min-height: auto;
-        margin-bottom: 75px;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .right-image .image {
-        order: 1;
-    }
-
-    .right-image .content {
-        order: 2;
+        display: flex;
+        width: 100%;
+        height: 550px;
+        margin: 0 0 25px;
     }
 
     .left-image .image,
     .right-image .image {
-        width: 100%;
-        height: 380px;
-        min-height: 380px;
+        height: 270px;
+        min-height: 270px;
     }
 
     .left-image .content,
     .right-image .content {
-        width: 100%;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 600px) {
-    .logo img {
-        width: 75px;
-        height: 55px;
-    }
-
-    nav ul {
-        gap: 0;
-    }
-
-    nav ul li a {
-        padding: 7px;
-        font-size: 12px;
-    }
-
-    #home > h1 {
-        font-size: 42px;
-    }
-
-    #home > img {
-        height: 260px;
-        border-radius: 18px;
-    }
-
-    .left-image .image,
-    .right-image .image {
         height: 280px;
-        min-height: 280px;
-        border-radius: 18px;
+        padding: 24px;
     }
 
     .content h2 {
-        font-size: 34px;
+        font-size: 27px;
     }
 
     .content p {
-        font-size: 16px;
-        line-height: 1.75;
+        font-size: 14px;
     }
 }
